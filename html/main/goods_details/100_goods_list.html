@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>竞价好物</title>
+    <link rel="stylesheet" href="../../../css/api.css">
+    <link rel="stylesheet" href="../../../css/100_common.css">
+    <link rel="stylesheet" href="../../../css/210_index.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <style>
+      
+    </style>
+</head>
+
+<body>
+    <div class="layout_page_content">
+        <header class="c_header l_header" >
+            <div class="c_header__inner" id="headerCont">
+                <div class="c_header__back l_header__back" tapmode="" onclick="window.history.back();">
+                    <button type="button" class="o_icon_back"></button>
+                </div>
+                <div class="c_header__title l_header__title">
+                    <h3 class="t3">竞价好物</h3>
+                </div>
+                <div class="c_header__right l_header__right" onclick="window.location.href='900_goods_search.html'" >
+                    <button type="button" class="o_icon_search" id="headerContSearchBtn"></button>
+                </div>
+            </div>
+
+            <!--头部搜索-->
+            <div class="c_header__search l_header__search " id="headerSearch">
+                <form class="c_search__box">
+                    <i class="o_icon_search--small l_search__icon--inner"></i>
+                    <input type="text" class="c_search__input" placeholder="请输入商品">
+                    <button class="c_search_btn l_search_btn" id="headerSearchCancelBtn">取消</button>
+                </form>
+            </div>
+        </header>
+        <!--商品筛选-->
+        <aside class="c_filter l_filter">
+            <div class="c_filter__nav">
+                <a href="#" class="c_nav__item o_nav_triangle active" id="allGoodsBtn">全部商品</a>
+                <a href="#" class="c_nav__item ">默认</a>
+                <a href="#" class="c_nav__item ">最快公布</a>
+                <a href="#" class="c_nav__item ">评价最高</a>
+            </div>
+            <div class="c_filter__submenu l_filter__submenu" id="filterSubmenu">
+                <ul class="c_filter__list"  >
+                    <li class="c_item active">
+                        <span class="name ">全部商品</span>
+                        <span class="o_choose_icon--goods c_choose_icon--goods"></span>
+                    </li>
+                    <li class="c_item">
+                        <span class="name">全部商品</span>
+                        <span class="o_choose_icon--goods c_choose_icon--goods"></span>
+                    </li>
+                    <li class="c_item">
+                        <span class="name">手机平板</span>
+                        <span class="o_choose_icon--goods c_choose_icon--goods"></span>
+                    </li>
+                    <li class="c_item">
+                        <span class="name">电脑办公</span>
+                        <span class="o_choose_icon--goods c_choose_icon--goods"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="o_filter__mask" id="filterMask">
+
+            </div>
+        </aside>
+        <div class="l_wrap">
+            <!--商品列表-->
+            <div class="c_goods">
+                <ul class="c_goodsList l_goodsList">
+                    <li class="c_item l_item" onclick="window.location.href='110_goods_details.html'" >
+                        <div class="c_userTop l_userTop">
+                            <div class="c_leftUser">
+                                <span class="o_userImg l_userImg"><img src="../../../image/eval_img_1.png" alt=""></span>
+                                <span class="c_name l_name">IPHONE X</span>
+                            </div>
+                            <div class="l_rightBtn">
+                                <button class="o_icon_more"></button>
+                            </div>
+                        </div>
+                        <div class="c_goodsTitCont">
+                            <div class="o_goodsImg">
+                                <div class="o_goodsImg__inner">
+                                    <img src="../../../image/goodsList_img.png" alt="">
+                                </div>
+                            </div>
+                            <h3 class="o_goodsTitle">
+                                IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                            </h3>
+                        </div>
+                        <div class="c_goodsInfo">
+                            <div class="c_goodsInfo__left">
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_people "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_star "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                            </div>
+                            <div class="c_goodsInfo__right">
+                                    <span class="o_auctionTime">
+                                        <em class="hour">5</em>小时<em class="hour">29</em>分<em class="second">30</em>秒结束竞拍
+                                    </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="c_item l_item">
+                        <div class="c_userTop l_userTop">
+                            <div class="c_leftUser">
+                                <span class="o_userImg l_userImg"><img src="../../../image/eval_img_1.png" alt=""></span>
+                                <span class="c_name l_name">IPHONE X</span>
+                            </div>
+                            <div class="l_rightBtn">
+                                <button class="o_icon_more" id="goodsMoreBtn"></button>
+                            </div>
+                        </div>
+                        <div class="c_goodsTitCont">
+                            <div class="o_goodsImg">
+                                <div class="o_goodsImg__inner">
+                                    <img src="../../../image/goodsList_img.png" alt="">
+                                </div>
+                            </div>
+                            <h3 class="o_goodsTitle">
+                                IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                            </h3>
+                        </div>
+                        <div class="c_goodsInfo">
+                            <div class="c_goodsInfo__left">
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_people "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_star "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                            </div>
+                            <div class="c_goodsInfo__right">
+                                    <span class="o_auctionTime">
+                                        <em class="hour">5</em>小时<em class="hour">29</em>分<em class="second">30</em>秒结束竞拍
+                                    </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../script/api.js"></script>
+    <script type="text/javascript" src="../../../script/common_js.js"></script>
+    <script>
+        $api.addEvt($api.dom('#headerContSearchBtn'), 'click', function(){
+            $api.toggleCls($api.dom('#headerCont'), 'hide');
+            $api.toggleCls($api.dom('#headerSearch'), 'show');
+        });
+
+        $api.addEvt($api.dom('#headerSearchCancelBtn'), 'click', function(){
+            $api.toggleCls($api.dom('#headerCont'), 'hide');
+            $api.toggleCls($api.dom('#headerSearch'), 'show');
+        });
+
+        $api.addEvt($api.dom('#allGoodsBtn'), 'click', function(){
+            $api.toggleCls($api.dom('#filterSubmenu'), 'open');
+            $api.toggleCls($api.dom('#filterMask'), 'open');
+        });
+
+        $api.addEvt($api.dom('#filterMask'), 'click', function(){
+            $api.toggleCls($api.dom('#filterSubmenu'), 'open');
+            $api.toggleCls($api.dom('#filterMask'), 'open');
+        });
+    </script>
+</body>
+
+</html>

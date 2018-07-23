@@ -1,0 +1,186 @@
+/*************************
+title: 登录注册;
+ coder: 刘帆;
+ time: 2017-10-30
+ *************************/
+
+.o_sign_bgimg{
+  background: url(../image/bg4.png) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.c_sign{
+  color: #fff;
+  .c_logo{
+    margin-top: 0.4rem;
+    margin-bottom: 0.3rem;
+    @extend %flexbox;
+    @include align-items(center);
+    .c_logo__line{
+      width: 0.3rem;
+      height: 0.03rem;
+      margin-right: 0.15rem;
+      background-color: #ff5363;
+    }
+    .c_logo_icon{
+      width: 0.5rem;
+      height: 0.5rem;
+      text-align: center;
+      line-height: 0.5rem;
+      font-size: 0.2rem;
+      border:solid 2px #fff;
+      border-radius: 0.08rem;
+    }
+  }
+  .c_mall_title{
+    font-size: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+  .l_header{
+    background: none ;
+  }
+  .c_header__inner{
+    padding-left: 0;
+    padding-right: 0;
+    color: #fff;
+  }
+  .c_bigHeader--small{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .c_sign__none{
+    height: 0.45rem;
+  }
+  .c_sign__user_img{
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    img{
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 50%;
+    }
+  }
+}
+.c_sign_form{
+  .c_sign_form__row{
+    @extend %flexbox;
+    @include align-items(center);
+    padding-top: 0.32rem;
+    padding-bottom: 0.14rem;
+    border-bottom: solid 0.01rem rgba(255,255,255,.5);
+    .c_tit_icon{
+      @extend %flexbox;
+      @include align-items(center);
+      .c_icon{
+        margin-right: 0.15rem;
+      }
+    }
+    .c_input{
+      margin: 0 0.15rem;
+      min-width: 1rem;
+      @include flex(1);
+      font-size: 0.18rem;
+      color: rgba(255,255,255,.5);
+    }
+    .c_text_btn{
+      font-size: 0.18rem;
+      color: #FF8363;
+    }
+  }
+  .c_sign__btn{
+    padding-top: 0.35rem;
+    .c_btn{
+      @extend %flexbox;
+      @include align-items(center);
+      width: 100%;
+      height: 0.36rem;
+      padding-left: 0.3rem;
+      color: rgba(255,255,255,.5);
+      border:2px solid rgba(255,255,255,.5);
+      border-radius: 0.2rem;
+      margin-bottom: 0.2rem;
+      .c_line{
+        height: 0.03rem;
+        margin-top: 0.08rem;
+        @include flex(1);
+        background-color: rgba(255,255,255,.5);
+      }
+      .c_text{
+        width: 1.19rem;
+        font-size: 0.18rem;
+        text-align: center;
+      }
+    }
+    .c_btn:first-child{
+      border-color: #F63930;
+      color: #fff;
+      .c_line{
+        background-color: #fff;
+      }
+    }
+  }
+}
+.c_sign__question{
+  text-align: center;
+  color: rgba(255,255,255,.5);
+  font-size: 0.12rem;
+  button{
+    font-size: 0.12rem;
+    color: rgba(255,255,255,.5);
+  }
+}
+.c_sign__user_agreement{
+  text-align: center;
+  button{
+    color: #fff;
+    em{
+      color: #FF8363;
+    }
+  }
+}
+.c_signTaps{
+  @extend %flexbox;
+  @include align-items(center);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0.24rem 0.3rem;
+  color: rgba(255,255,255,.5);
+  li.active{
+    color: #fff;
+  }
+  .c_item__2{
+    margin-left: 0.2rem;
+  }
+  .c_item__3{
+    margin-left: auto;
+  }
+}
+.c_sign{
+  .tab_content{
+    .tab_pane{
+      display: none
+    }
+    .tab_pane.active{
+      display: block;
+    }
+  }
+}
+.c_third_party_sign{
+  //position: fixed;
+  //left: 0;
+  //bottom: 0;
+  //width: 100%;
+  @extend %flexbox;
+  @include flex-just(space-around);
+  background-color: #fff;
+  padding-top: 0.25rem;
+  padding-bottom: 0.26rem;
+  text-align: center;
+  .icon{
+    margin-bottom: 0.06rem;
+  }
+}

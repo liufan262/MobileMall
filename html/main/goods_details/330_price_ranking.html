@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>公布排名</title>
+    <link rel="stylesheet" href="../../../css/api.css">
+    <link rel="stylesheet" href="../../../css/100_common.css">
+    <link rel="stylesheet" href="../../../css/210_index.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="layout_page_content">
+        <header class="c_header l_header">
+            <div class="c_header__inner">
+                <div class="c_header__back l_header__back" >
+                </div>
+                <div class="c_header__title l_header__title">
+                </div>
+                <div class="c_header__right l_header__right" tapmode=""  onclick="window.history.back();">
+                    <button type="button" class="o_icon_headerClose"></button>
+                </div>
+            </div>
+            <div class="c_bigHeader--small" >
+                <div class="bigTitle" >
+                    <h1 class="t1">公布排名</h1>
+                    <div class="l_btn">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--用户排名-->
+        <div class="c_userRanking u_bigHeader_pt77 u_marginBottom_bigBtn">
+            <ul class="c_userRanking__list">
+                <li class="c_item">
+                    <div class="c_userRanking__row mui_flex align-center">
+                        <div class="c_user cell fixed mui_flex align-center">
+                            <span class="c_ranking__num o_icon_champion"></span>
+                            <span class="c_ranking__img o_userImg__small"><img src="../../../image/eval_img.png" alt=""></span>
+                            <span class="name">张小北</span>
+                        </div>
+                        <div class="c_ticket cell">
+                            <span class="u_redColor">抵用券：<em>500</em>元</span>
+                        </div>
+                        <div class="c_price cell fixed">
+                            <span class="u_redColor">出价：<em>700</em>元</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="c_item">
+                    <div class="c_userRanking__row mui_flex align-center">
+                        <div class="c_user cell fixed mui_flex align-center">
+                            <span class="c_ranking__num ">2</span>
+                            <span class="c_ranking__img o_userImg__small"><img src="../../../image/eval_img.png" alt=""></span>
+                            <span class="name">张小北</span>
+                        </div>
+                        <div class="c_ticket cell">
+                            <span class="">抵用券：<em>500</em>元</span>
+                        </div>
+                        <div class="c_price cell fixed">
+                            <span class="">出价：<em>700</em>元</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="c_item">
+                    <div class="c_userRanking__row mui_flex align-center">
+                        <div class="c_user cell fixed mui_flex align-center">
+                            <span class="c_ranking__num ">3</span>
+                            <span class="c_ranking__img o_userImg__small"><img src="../../../image/eval_img.png" alt=""></span>
+                            <span class="name">张小北</span>
+                        </div>
+                        <div class="c_ticket cell">
+                            <span class="">抵用券：<em>500</em>元</span>
+                        </div>
+                        <div class="c_price cell fixed">
+                            <span class="">出价：<em>700</em>元</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="o_enterBtn--footer" onclick="window.location.href='400_goods_payment.html'">
+            <button class="o_primaryBtn">恭喜您获得购买权，去支付</button>
+        </div>
+
+
+    </div>
+    <div class="c_modal l_modal"style="display: none;" >
+        <div class="c_modal__header">
+            <div class="c_header__icon"></div>
+            <h2 class="t2 c_header__tit l_header__tit">
+                设置提醒成功
+            </h2>
+        </div>
+        <div class="c_modal__body l_modal__body">
+            <div class="c_desc l_desc">
+                不要气馁，获得购买权用户支付后，平台将返还您随机金额优惠券。因您未获得购买权使用的抵价券依然有效，参加其他商品竞价可使用。
+            </div>
+            <div class="c_coupons__modal">
+            </div>
+
+            <button type="submit" class="o_primaryBtn">确定</button>
+        </div>
+        <div class="c_modal__footer">
+            <button class="o_icon_modalClose l_modal__closeBtn" type="button"></button>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../script/api.js"></script>
+    <script type="text/javascript" src="../../../script/js_third_party_lib/layer.js"></script>
+    <script type="text/javascript" src="../../../script/common_js.js"></script>
+    <script>
+        function auctionBtn_1() {
+            layer.open({
+                type: 1,
+                content: ' <div class="c_modal l_modal" >\n' +
+                '        <div class="c_modal__header">\n' +
+                '             <div class="c_header__icon o_icon_modal_wrong" ></div>\n' +
+                '            <h2 class="t2 c_header__tit l_header__tit">\n' +
+                '                很遗憾，您未获得购买权\n' +
+                '            </h2>\n' +
+                '        </div>\n' +
+                '        <div class="c_modal__body l_modal__body">\n' +
+                '            <div class="c_desc l_desc" style="margin-bottom: .3rem">\n' +
+                '                不要气馁，获得购买权用户支付后，平台将返还您随机金额优惠券。因您未获得购买权使用的抵价券依然有效，参加其他商品竞价可使用。\n' +
+                '            </div>\n' +
+                '            <button type="submit" class="o_primaryBtn" onclick="layer.closeAll();">确定</button>\n' +
+                '        </div>\n' +
+                '    </div>',
+                anim: 'scale',
+                style: 'box-shadow:none;',
+                shade: ' background: rgba(255, 255, 255, 0.9);'
+            });
+        }
+
+        auctionBtn_1();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>抽奖</title>
+    <link rel="stylesheet" href="../../../css/api.css">
+    <link rel="stylesheet" href="../../../css/100_common.css">
+    <link rel="stylesheet" href="../../../css/210_index.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="layout_page_content">
+        <header class="c_header l_header">
+            <div class="c_header__inner">
+                <div class="c_header__back l_header__back" tapmode=""   onclick="window.history.back();">
+                    <button type="button" class="o_icon_back"></button>
+                </div>
+                <div class="c_header__title l_header__title">
+                    <h3 class="t3">抽奖</h3>
+                </div>
+                <div class="c_header__right l_header__right">
+                </div>
+            </div>
+        </header>
+
+
+        <div class="u_borBot10px">
+            <div class="c_lottery ">
+                <div class="c_lottery__cont">
+                    <div class="c_lottery__inner">
+                        <button type="button" class="c_btn " id="lotteryBtn"></button>
+                    </div>
+                </div>
+                <ul class="c_lotteryIcon__list">
+                    <li class="c_lotteryIcon__itm item1"><span class="c_text">2000钻石</span></li>
+                    <li class="c_lotteryIcon__itm item2"><span class="c_text">2000宝石</span></li>
+                    <li class="c_lotteryIcon__itm item3"><span class="c_text">30元抵用券</span></li>
+                    <li class="c_lotteryIcon__itm item4"><span class="c_text">30元入场券</span></li>
+                    <li class="c_lotteryIcon__itm item5"><span class="c_text">30元优惠券</span></li>
+                    <li class="c_lotteryIcon__itm item6"><span class="c_text">30元兑换券</span></li>
+                    <li class="c_lotteryIcon__itm item7"><span class="c_text">2000积分</span></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="l_wrap">
+          <div class="c_activity_rule">
+              <div class="c_tit">活动规则</div>
+              <p class="u_redColor">抽奖须知</p>
+              <p>1、百分百获得奖励</p>
+              <p>2、这是其他抽奖须知这是其他抽奖须知这是其他抽奖须知这是其他抽奖须知这是其他抽奖须知这是其他抽奖须知这是其他抽奖须知这是其他抽奖须知</p>
+          </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../../../script/api.js"></script>
+    <script type="text/javascript" src="../../../script/common_js.js"></script>
+    <script>
+        $api.addEvt($api.dom('#lotteryBtn'), 'click', function(){
+            $api.toggleCls($api.dom('#lotteryBtn'), 'active');
+        });
+    </script>
+
+</body>
+
+</html>

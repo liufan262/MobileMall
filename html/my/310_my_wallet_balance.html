@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>余额</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/100_common.css">
+    <link rel="stylesheet" href="../../css/210_index.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="layout_page_content">
+        <header class="c_header l_header l_header--balance">
+            <div class="c_header__inner">
+                <div class="c_header__back l_header__back" tapmode=""   onclick="window.history.back();">
+                    <button type="button" class="o_icon_white_arrow"></button>
+                </div>
+                <div class="c_header__title l_header__title">
+                    <h3 class="t3">余额</h3>
+                </div>
+                <div class="c_header__right l_header__right">
+                </div>
+            </div>
+        </header>
+
+
+        <div class="c_myBalance">
+            <div class="c_myBalance__inner">
+                <h2 class="c_num">¥9999元</h2>
+                <div class="c_tit mui_flex just_between">
+                    <span>支出</span>
+                    <span>收入</span>
+                </div>
+                <div class="mui_flex just_between">
+                    <span>¥ 9999元</span>
+                    <span>¥ 9999元</span>
+                </div>
+            </div>
+            <!--日期可视数据-->
+            <div class="c_myBalance__date"></div>
+            <div class="c_myBalance__img"></div>
+        </div>
+
+        <ul class="c_myBalance__list u_marginBottom_bigBtn">
+            <li class="c_myBalance__item">
+                <div class="c_tit">
+                    <div class="c_name">在线支付</div>
+                    <div class="c_time"><span>2017-08-01</span><span>20:28:22</span></div>
+                </div>
+                <div class="c_info c_reduce">
+                    <div class="c_num">-500.00</div>
+                    <div class="c_status"></div>
+                </div>
+            </li>
+            <li class="c_myBalance__item">
+                <div class="c_tit">
+                    <div class="c_name">充值</div>
+                    <div class="c_time"><span>2017-08-01</span><span>20:28:22</span></div>
+                </div>
+                <div class="c_info c_addition">
+                    <div class="c_num">+500.00</div>
+                    <div class="c_status">成功</div>
+                </div>
+            </li>
+            <li class="c_myBalance__item">
+                <div class="c_tit">
+                    <div class="c_name">提现</div>
+                    <div class="c_time"><span>2017-08-01</span><span>20:28:22</span></div>
+                </div>
+                <div class="c_info c_reduce">
+                    <div class="c_num">-500.00</div>
+                    <div class="c_status">提现中</div>
+                </div>
+            </li>
+            <li class="c_myBalance__item">
+                <div class="c_tit">
+                    <div class="c_name">充值</div>
+                    <div class="c_time"><span>2017-08-01</span><span>20:28:22</span></div>
+                </div>
+                <div class="c_info c_addition">
+                    <div class="c_num">+500.00</div>
+                    <div class="c_status"></div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <div class="o_enterBtn--footer o_footerTwoBtn--bottom">
+        <button type="button" class="o_footerTwoBtn__btn" onclick="window.location.href='311_my_wallet_balance_recharge.html'" >充值</button>
+        <button type="button" class="o_footerTwoBtn__btn" onclick="window.location.href='312_my_wallet_balance_cash.html'" >提现</button>
+    </div>
+    <script type="text/javascript" src="../../script/api.js"></script>
+    <script type="text/javascript" src="../../script/common_js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>支付</title>
+    <link rel="stylesheet" href="../../../css/api.css">
+    <link rel="stylesheet" href="../../../css/100_common.css">
+    <link rel="stylesheet" href="../../../css/210_index.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="layout_page_content">
+        <header class="c_header l_header">
+            <div class="c_header__inner">
+                <div class="c_header__back l_header__back" tapmode=""   onclick="window.history.back();">
+                    <button type="button" class="o_icon_back"></button>
+                </div>
+                <div class="c_header__title l_header__title">
+                    <h3 class="t3">支付</h3>
+                </div>
+                <div class="c_header__right l_header__right">
+                </div>
+            </div>
+        </header>
+
+        <!--支付详情-->
+
+        <div class="c_paymentDetails">
+            <div class="c_paymentDetails--countdown">
+                <div class="c_goodsTitCont--small">
+                    <div class="c_goodsTitCont__img--small">
+                        <img src="../../../image/payment_img.png" alt="">
+                    </div>
+                    <div class="c_goodsTitCont__info--small">
+                        <h5 class="c_goodsTitCont__tit--small">
+                            Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存
+                        </h5>
+                        <div class="c_goodsTitCont__tips--small">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--倒计时-->
+                <div class="c_countdown l_countdown">
+                    <em class="day">0</em>:<em class="hour">1</em>:<em class="minute">25</em>:<em class="sec">59</em>
+                </div>
+                <p class="c_desc">
+                    尽快支付哦，倒计时完毕后您将失去购买资格
+                </p>
+            </div>
+
+            <!--支付内容-->
+            <div class="c_paymentDetails__content">
+                <ul class="c_payMode title_nav">
+                    <li class="c_item active" tapmode=""  onclick="switchTab(1,'title_nav','tab_content')">
+                        <div class="o_icon_resell_payment"></div>
+                        <div class="c_text">转卖购买权</div>
+                        <div class="o_icon_inputRadio"></div>
+                        <div class="c_line"></div>
+                    </li>
+                    <li class="c_item"  tapmode=""  onclick="switchTab(2,'title_nav','tab_content')">
+                        <div class="o_icon_self_payment"></div>
+                        <div class="c_text">自行支付</div>
+                        <div class="o_icon_inputRadio"></div>
+                        <div class="c_line"></div>
+                    </li>
+                </ul>
+
+                <form action="" class="c_paymentDetails__form">
+                    <div class="tab_content">
+                        <div class="tab_pane active">
+                            <div class="c_singleRow  mui_flex just_between u_borBot1px u_pageWrap_margin">
+                                <div class="c_title cell fixed">转卖时间</div>
+
+                                <div class="  cell fixed">
+                                    <div class="o_numAddSubBtn">
+                                        <div class="o_add o_icon_sub"></div>
+                                        <div class="o_num">2</div>
+                                        <div class="o_sub  o_icon_add "></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_singleRow  mui_flex just_between u_borBot1px u_pageWrap_margin">
+                                <div class="c_title cell fixed">转卖付款</div>
+
+                                <div class="  cell fixed">
+                                    <span class="u_redColor">5元</span>
+                                </div>
+                            </div>
+                            <div class="c_singleRow  mui_flex just_between u_borBot10px">
+                                <div class="c_title cell fixed">会员等级限制</div>
+
+                                <div class="  cell fixed">
+                                    <span class="u_redColor">VIP10</span>
+                                </div>
+                            </div>
+
+                            <!--去支付-->
+                            <div class="o_settlement">
+                                <div class="o_mergeMoney">
+                                    合并: <span class="num"><em>30</em>元</span>
+                                </div>
+                                <div class="o_settlement__btn" onclick="window.location.href='410_goods_publish.html'">
+                                    去支付
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_pane">
+                            <div class="c_singleRow  mui_flex just_between u_borBot1px u_pageWrap_margin">
+                                <div class="c_title cell fixed">我的报价</div>
+
+                                <div class="  cell fixed">
+                                    <span class="u_redColor">500元</span>
+                                </div>
+                            </div>
+                            <div class="c_singleRow  mui_flex just_between u_borBot10px">
+                                <div class="c_title cell fixed">优惠券</div>
+                                <div class="c_content cell ">
+                                    立减<em>50</em>元
+                                </div>
+                                <div class="c_pointer o_icon_pointer cell fixed"></div>
+                            </div>
+                            <div class="c_singleRow  mui_flex just_between u_borBot1px">
+                                <div class="c_title cell fixed">支付方式</div>
+
+                                <div class="  cell fixed">
+                                </div>
+                            </div>
+                            <div class="l_wrap">
+                                <ul class="c_payment__list l_payment__list">
+                                    <li class="c_item l_item">
+                                        <label class="c_pay__singleRow l_pay__singleRow mui_flex align-center just_between">
+                                   <span class="cell fixed mui_flex align-center">
+                                       <span class="c_pay__icon o_icon_payBalance"></span>
+                                       <span class="c_pay__name">
+                                           账户余额: <em class="money">3003</em>元
+                                       </span>
+                                   </span>
+                                        </label>
+                                    </li>
+                                    <li class="c_item">
+                                        <label class="c_pay__singleRow l_pay__singleRow mui_flex align-center just_between">
+                                    <span class="cell fixed mui_flex align-center">
+                                        <span class="c_pay__icon o_icon_payWechat"></span>
+                                        <span class="c_pay__name">
+                                           微信支付
+                                       </span>
+                                    </span>
+                                            <input class="o_inputRadio cell fixed" type="radio" name="payRadioOptions">
+                                        </label>
+                                    </li>
+                                    <li class="c_item">
+                                        <label class="c_pay__singleRow l_pay__singleRow mui_flex align-center just_between">
+                                    <span class="cell fixed mui_flex align-center">
+                                        <span class="c_pay__icon o_icon_payAlipay"></span>
+                                        <span class="c_pay__name">
+                                           支付宝
+                                       </span>
+                                    </span>
+                                            <input class="o_inputRadio cell fixed" type="radio" name="payRadioOptions">
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--去支付-->
+                            <div class="o_settlement">
+                                <div class="o_mergeMoney">
+                                    合并: <span class="num"><em>999</em>元</span>
+                                </div>
+                                <div class="o_settlement__btn"  onclick="window.location.href='420_goods_pay_success.html'">
+                                    去支付
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../../../script/api.js"></script>
+    <script type="text/javascript" src="../../../script/common_js.js"></script>
+    <script>
+
+        switchTab=function(index,target,parentBox){
+
+            var lis=$api.domAll('.'+target+' li');
+            for( var i=0;i<lis.length;i++){
+                $api.removeCls(lis[i],'active');
+            }
+            $api.addCls(lis[index-1],'active');
+
+            var contents=$api.domAll('.'+parentBox+'>div');
+            console.log(contents);
+            for( var j=0;j<contents.length;j++){
+                $api.removeCls(contents[j],'active');
+            }
+            $api.addCls(contents[index-1],'active');
+        }
+    </script>
+</body>
+
+</html>

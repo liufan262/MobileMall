@@ -1,0 +1,70 @@
+//title: mixin;
+//coder: 刘帆;
+//time: 2017-10-23
+@mixin pageWrap {
+padding-left: 0.24rem ;
+padding-right: 0.24rem ;
+}
+@mixin pageWrapImport {
+  padding-left: 0.24rem !important;
+  padding-right: 0.24rem !important;
+}
+@mixin pageWrapSmall{
+  padding-left: 0.19rem !important;
+  padding-right: 0.19rem !important;
+}
+@mixin pageWrapBig{
+  padding-left: 0.3rem !important;
+  padding-right: 0.3rem !important;
+}
+@mixin t1 {
+  font-size: 0.3rem;
+  line-height: 1;
+  font-weight: bold;
+}
+@mixin t2 {
+  font-size: 0.18rem;
+  line-height: 1;
+}
+@mixin t3 {
+  font-size: 0.17rem;
+  line-height: 1;
+}
+@mixin s1{
+  font-size: 0.16rem;
+  line-height: 1;
+}
+@mixin s2 {
+  font-size: 0.12rem;
+  line-height: 1;
+}
+@mixin icon_bg{
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@mixin icon_size($w,$h){
+  width:$w;
+  height:$h;
+  -webkit-background-size: $w,$h;
+  background-size: $w,$h;
+}
+@mixin line-clamp-2{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+@mixin margBotColor{
+  border-top:0.01rem solid #ededed;
+  border-bottom: 0.1rem solid #F5F5F9;
+}
+@mixin marBotColor_bot{
+  border-bottom: 0.1rem solid #F5F5F9;
+}
+//主要按钮样式
+@mixin primaryBtnBackground{
+background: -webkit-linear-gradient(left,#ff8363,#f42d28) no-repeat;
+color: #fff;
+}
+ 

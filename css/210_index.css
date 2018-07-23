@@ -1,0 +1,101 @@
+ .nav_cont {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: flex;
+     background-color: #fff;
+ }
+ .nav_cont .menu {
+     display: block;
+     -webkit-box-flex: 1 1 auto;
+     -webkit-flex: 1 1 auto;
+     flex: 1 1 auto;
+     border-top: 1px solid #ededed;
+ }
+ .nav_cont .menu .nav_icon {
+     display: block;
+     width: 100%;
+     height: 0.43rem;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: 0.25rem 0.25rem;
+ }
+ .nav_cont .main_icon {
+     background-image: url(../image/main_icon.png);
+ }
+ .nav_cont .mall_icon {
+     background-image: url(../image/mall_icon.png);
+ }
+ .nav_cont .car_icon {
+     background-image: url(../image/car_icon.png);
+ }
+ .nav_cont .my_icon {
+     background-image: url(../image/my_icon.png);
+ }
+ .nav_cont .main_icon.active {
+     background-image: url(../image/main_icon_active.png);
+ }
+ .nav_cont .mall_icon.active {
+     background-image: url(../image/mall_icon_active.png);
+ }
+ .nav_cont .car_icon.active {
+     background-image: url(../image/car_icon_active.png);
+ }
+ .nav_cont .my_icon.active {
+     background-image: url(../image/my_icon_active.png);
+ }
+ .nav_cont .menu.main_btn {
+     flex: none;
+     border: none;
+     position: relative;
+     width: 0.45rem;
+ }
+ .nav_cont .menu.main_btn .semicircle {
+     position: absolute;
+     top: -0.13rem;
+     left: -0.06rem;
+     width: 0.55rem;
+     height: 0.26rem;
+     border: 1px solid #ededed;
+     border-bottom: none;
+     background-color: #fff;
+     border-radius: 50% / 100% 100% 0 0;
+ }
+ .nav_cont .menu.main_btn .semicircle .semicircle__inner{
+     position: absolute;
+     left: -0.02rem;
+     bottom: -0.1rem;
+     width: 0.8rem;
+     height: 0.23rem;
+     background-color: #fff;
+ }
+ .nav_cont .menu.main_btn .earth_icon{
+     position: absolute;
+     left: 50%;
+     top: -0.07rem;
+     margin-left: -0.22rem;
+     box-sizing: border-box;
+     border-radius: 50%;
+     width: 0.45rem;
+     height: 0.45rem;
+     background: url(../image/earth.gif) no-repeat center center;
+     background-size: 0.45rem 0.45rem;
+ }
+ .nav_cont .menu.main_btn .earth_icon_border{
+     position: absolute;
+     left: 50%;
+     top: -0.07rem;
+     margin-left: -0.22rem;
+     box-sizing: border-box;
+     border-radius: 50%;
+     width: 0.45rem;
+     height: 0.45rem;
+     background: url(../image/earth_border.png) no-repeat center center;
+     background-size: 0.45rem 0.45rem;
+     z-index: 5;
+     box-shadow: 0 0 0.1rem 0rem rgba(2, 2, 144, 0.3);
+ }
+ 

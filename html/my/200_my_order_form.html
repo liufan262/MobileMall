@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>我的订单</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/100_common.css">
+    <link rel="stylesheet" href="../../css/210_index.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+<div class="layout_page_content">
+    <header class="c_header l_header">
+        <div class="c_header__inner">
+            <div class="c_header__back l_header__back c_width" tapmode="" onclick="window.history.back();">
+                <button type="button" class="o_icon_back"></button>
+            </div>
+            <div class="c_header__title l_header__title">
+
+                <ul class="c_headerNav  ">
+                    <li class="c_item active" tapmode="" onclick="switchTab(1,'c_headerNav','header_tab_content')">
+                        <span class="c_tit">购买订单</span>
+                    </li>
+                    <li class="c_item" tapmode="" onclick="switchTab(2,'c_headerNav','header_tab_content')">
+                        <span class="c_tit">竞价订单</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="c_header__right l_header__right c_width">
+            </div>
+        </div>
+    </header>
+
+    <div class="header_tab_content">
+        <div class="header_tab_pane active">
+
+            <ul class="c_navTaps title_nav u_marBttoNnoe">
+                <li class="c_item active" tapmode="" onclick="switchTab(1,'title_nav','tab_content')">
+                    <span class="c_tit">全部</span>
+                </li>
+                <li class="c_item" tapmode="" onclick="switchTab(2,'title_nav','tab_content')">
+                    <span class="c_tit">待付款</span>
+                </li>
+                <li class="c_item" tapmode="" onclick="switchTab(3,'title_nav','tab_content')">
+                    <span class="c_tit">待发货</span>
+                </li>
+                <li class="c_item" tapmode="" onclick="switchTab(4,'title_nav','tab_content')">
+                    <span class="c_tit">待收货</span>
+                </li>
+                <li class="c_item" tapmode="" onclick="switchTab(5,'title_nav','tab_content')">
+                    <span class="c_tit">待评价</span>
+                </li>
+            </ul>
+            <div class="tab_content">
+                <!--购买订单 全部订单-->
+                <div class="tab_pane active">
+                    <ul class="c_otherForm__list">
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status">购买权</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--购买订单 待付款-->
+                <div class="tab_pane">
+                    <ul class="c_otherForm__list">
+                        <li class="c_otherForm__item " onclick="window.location.href='212_my_order_form_buy_pay.html'" >
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn">取消</button>
+                                <button class="c_btn_red">付款</button>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status">购买权</i>
+                                    <span class="c_goodsImgCountdown__inner"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn">取消</button>
+                                <button class="c_btn_red">付款</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--购买订单 待发货-->
+                <div class="tab_pane">
+                    <ul class="c_otherForm__list">
+                        <li class="c_otherForm__item" onclick="window.location.href='213_my_order_form_send.html'">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status">购买权</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--购买订单 待收货-->
+                <div class="tab_pane">
+                    <ul class="c_otherForm__list">
+                        <li class="c_otherForm__item" onclick="window.location.href='214_my_order_form_receive.html'">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn_red">确认收货</button>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn_red">确认收货</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--购买订单 待评价-->
+                <div class="tab_pane">
+                    <ul class="c_otherForm__list">
+                        <li class="c_otherForm__item" onclick="window.location.href='215_my_order_form_assess.html'" >
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn"  onclick="window.location.href='216_my_order_form_assess_cont.html'">
+                                <button class="c_btn_red">评价</button>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn_red">评价</button>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span><span class="score u_redColor">2000积分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn_red">评价</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_tab_pane ">
+            <ul class="c_navTaps title_nav u_marBttoNnoe title_nav_1">
+                <li class="c_item active" tapmode="" onclick="switchTab(1,'title_nav_1','tab_content_1')">
+                    <span class="c_tit">全部</span>
+                </li>
+                <li class="c_item" tapmode="" onclick="switchTab(2,'title_nav_1','tab_content_1')">
+                    <span class="c_tit">待付款</span>
+                </li>
+                <li class="c_item" tapmode="" onclick="switchTab(3,'title_nav_1','tab_content_1')">
+                    <span class="c_tit">待发货</span>
+                </li>
+                <li class="c_item" tapmode="" onclick="switchTab(4,'title_nav_1','tab_content_1')">
+                    <span class="c_tit">待收货</span>
+                </li>
+                <li class="c_item" tapmode="" onclick="switchTab(5,'title_nav_1','tab_content_1')">
+                    <span class="c_tit">待评价</span>
+                </li>
+            </ul>
+            <div class="tab_content_1">
+                <!--竞价订单 全部订单-->
+                <div class="tab_pane active">
+                    <ul class="c_otherForm__list">
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">购买权</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--竞价订单 待付款-->
+                <div class="tab_pane">
+                    <ul class="c_otherForm__list">
+                        <li class="c_otherForm__item " onclick="window.location.href='../main/goods_details/400_goods_payment.html'">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn">取消</button>
+                                <button class="c_btn_red">付款</button>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">购买权</i>
+                                    <span class="c_goodsImgCountdown__inner"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn">取消</button>
+                                <button class="c_btn_red">付款</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--竞价订单 待发货-->
+                <div class="tab_pane">
+                    <ul class="c_otherForm__list">
+                        <li class="c_otherForm__item" onclick="window.location.href='213_my_order_form_send.html'">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">购买权</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--竞价订单 待收货-->
+                <div class="tab_pane">
+                    <ul class="c_otherForm__list">
+                        <li class="c_otherForm__item" onclick="window.location.href='214_my_order_form_receive.html'" >
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn_red">确认收货</button>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn_red">确认收货</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--竞价订单 待评价-->
+                <div class="tab_pane">
+                    <ul class="c_otherForm__list">
+                        <li class="c_otherForm__item" onclick="window.location.href='215_my_order_form_assess.html'">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn_red">评价</button>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn_red">评价</button>
+                            </div>
+                        </li>
+                        <li class="c_otherForm__item">
+                            <div class="c_goodsTitCont--small">
+                                <div class="c_goodsTitCont__img--small">
+                                    <img src="../../image/payment_img.png" alt="">
+                                    <i class="o_goodsImg__showStatus o_icon_show_status hide">转卖</i>
+                                    <span class="c_goodsImgCountdown__inner hide"><em class="day">0</em>:<em
+                                            class="hour">1</em>:<em class="minute">25</em>:<em
+                                            class="sec">59</em></span>
+                                </div>
+                                <div class="c_goodsTitCont__info--small">
+                                    <h5 class="c_goodsTitCont__tit--small">
+                                        Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                        i5处理器/8G内存/128G闪存
+                                    </h5>
+                                    <div class="c_goodsTitCont__tips--small ">
+                                        <span class="c_money">4500元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_otherForm__money">
+                                共计<em>1</em>个商品&nbsp;&nbsp;合计： <span class="u_moneyFont"><em>400</em>元</span>
+                            </div>
+                            <div class="c_otherForm__btn">
+                                <button class="c_btn_red">评价</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script type="text/javascript" src="../../script/api.js"></script>
+<script type="text/javascript" src="../../script/common_js.js"></script>
+<script>
+
+    switchTab = function (index, target, parentBox) {
+
+        var lis = $api.domAll('.' + target + ' li');
+        for (var i = 0; i < lis.length; i++) {
+            $api.removeCls(lis[i], 'active');
+        }
+        $api.addCls(lis[index - 1], 'active');
+
+        var contents = $api.domAll('.' + parentBox + '>div');
+        console.log(contents);
+        for (var j = 0; j < contents.length; j++) {
+            $api.removeCls(contents[j], 'active');
+        }
+        $api.addCls(contents[index - 1], 'active');
+    }
+</script>
+</body>
+
+</html>

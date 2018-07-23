@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="u_grayBackgcolor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>发票信息</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/100_common.css">
+    <link rel="stylesheet" href="../../css/210_index.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="layout_page_content">
+        <header class="c_header l_header">
+            <div class="c_header__inner">
+                <div class="c_header__back l_header__back" tapmode=""   onclick="window.history.back();">
+                    <button type="button" class="o_icon_back"></button>
+                </div>
+                <div class="c_header__title l_header__title">
+                    <h3 class="t3">发票信息</h3>
+                </div>
+                <div class="c_header__right l_header__right">
+                </div>
+            </div>
+        </header>
+        <div class="u_borBot10px"></div>
+        <ul class="c_other__list--row">
+            <li class="c_item">
+                <div class="c_singleRow  mui_flex align-center just_between u_borBot10px">
+                    <div class="c_title cell fixed">需要发票</div>
+                    <div class="  cell fixed">
+                        <i class="c_item_switch off">
+
+                        </i>
+                    </div>
+                </div>
+            </li>
+            <li class="c_item">
+                <div class="c_singleRow  mui_flex align-center just_between u_borBot10px">
+                    <div class="c_title cell fixed">发票类型</div>
+                    <div class="c_content cell c_towClose">
+                        <label  class="c_label"><input type="radio" class="o_inputRadio" name="leixing">个人</label>
+                        <label  class="c_label"><input type="radio" class="o_inputRadio" name="leixing">单位</label>
+                    </div>
+                </div>
+            </li>
+            <li class="c_item">
+                <div class="c_singleRow  mui_flex align-center just_between u_borBot1px">
+                    <div class="c_title cell fixed">发票抬头</div>
+                </div>
+            </li>
+        </ul>
+        <div class="c_revisePhone">
+
+            <div class="c_revisePhone__row">
+                <div class="c_text">
+                    <input type="text" placeholder="公司名称">
+                </div>
+            </div>
+            <div class="c_revisePhone__row">
+                <div class="c_text">
+                    <input type="text" placeholder="请再次填写纳税人识别号">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="u_wrap_btn" tapmode="" onclick="window.history.back();">
+            <button type="submit" class="o_primaryBtn">确定</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../../script/api.js"></script>
+    <script type="text/javascript" src="../../script/common_js.js"></script>
+    <script>
+
+        switchTab=function(index,target,parentBox){
+
+            var lis=$api.domAll('.'+target+' li');
+            for( var i=0;i<lis.length;i++){
+                $api.removeCls(lis[i],'active');
+            }
+            $api.addCls(lis[index-1],'active');
+
+            var contents=$api.domAll('.'+parentBox+'>div');
+            console.log(contents);
+            for( var j=0;j<contents.length;j++){
+                $api.removeCls(contents[j],'active');
+            }
+            $api.addCls(contents[index-1],'active');
+        }
+    </script>
+</body>
+
+</html>

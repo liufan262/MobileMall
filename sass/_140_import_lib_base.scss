@@ -1,0 +1,181 @@
+//title: base;
+//coder: 刘帆;
+//time: 2017-10-23
+.u_borderBto{
+border-bottom: 0.01rem solid #ededed !important;
+}
+.u_margBotColor{
+  @include margBotColor;
+}
+input[type="checkbox"], input[type="radio"]{
+  -webkit-appearance: none;
+  outline: none;
+}
+.l_wrap--small{
+  @include pageWrapSmall;
+}
+.l_wrap--big{
+  @include pageWrapBig;
+}
+.o_primaryBtn{
+  @include primaryBtnBackground;
+  @include s1;
+  width: 100%;
+  line-height: 0.4rem;
+  height: 0.4rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  font-weight: bold;
+}
+.o_primaryBtnNone{
+  @extend .o_primaryBtn;
+  background: #F0F0F5;
+  box-shadow: none;
+  color: $grayColor_a1;
+  margin-top: 0.2rem;
+}
+.u_wrap_btn{
+  padding-left: 0.3rem !important;
+  padding-right: 0.3rem !important;
+}
+.u_redColor{
+  color: $redColor !important;
+}
+.u_memberColor{
+  color: #FE8E5C;
+  font-weight: bold;
+}
+.u_garColor_a1{
+  color: $grayColor_a1;
+}
+.u_paddLeftRight{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.o_paragraph--small{
+  @extend .o_paragraph;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+.u_marBttoNnoe{
+  margin-bottom: 0 !important;
+}
+.u_padBttoNone{
+  padding-bottom: 0 !important;
+}
+.u_show{
+  display: block !important;
+}
+.u_hide{
+  display: none !important;
+}
+.o_userImg__small{
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  img{
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+  }
+}
+.o_enterBtn--footer{
+  @extend %flexbox;
+  @include align-items(center);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 101;
+  width: 100%;
+  height: 0.6rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 0.3rem;
+}
+.u_borBot1px{
+  border-bottom: solid 0.01rem #EBEBED !important;
+}
+.u_borBot10px{
+  border-bottom: solid 0.1rem #F5F5F9 !important;
+}
+.u_borBotNo{
+  border-bottom: none !important;
+}
+.u_pageWrap_margin{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0.24rem !important;
+  margin-right: 0.24rem !important;
+}
+.u_moneyFont{
+  color: $redColor;
+  font-size: 0.18rem;
+  line-height: 0.18rem;
+}
+.u_scoreFont{
+  color: $redColor;
+  font-size: 0.12rem;
+  line-height: 0.12rem;
+  margin-left: 0.1rem;
+}
+.u_line_font{
+  color: $grayColor_a1;
+  margin-left: 0.1rem;
+  font-size: 0.12rem;
+  text-decoration: line-through;
+}
+.u_marBot_none{
+  margin-bottom:0 !important;
+}
+.u_settlement_bottom{
+  padding-bottom: 0.53rem !important;
+}
+.u_settlement_borBottom{
+  border-bottom: solid 0.53rem #F5F5F9 !important;
+}
+//底部有提交大按钮
+.u_marginBottom_bigBtn{
+padding-bottom: 0.8rem !important;
+}
+.u_marginBottom_bigBtn_gray{
+  border-bottom: solid 0.7rem #f5f5f9!important;
+}
+.u_grayBackgcolor{
+  background-color: #F5F5F9 !important;
+  body{
+    background-color: #F5F5F9 !important;
+    .layout_page_content{
+      background-color: #F5F5F9 !important;
+    }
+  }
+}
+.u_bigHeader_pt77{
+  padding-top: 0.77rem !important;
+}
+.u_box_shadow_1{
+  box-shadow: 0 0.1rem 0.3rem rgba(188,188,204,.2);
+}
+.o_title_row{
+  @include pageWrap;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  font-size: 0.16rem;
+  h6{
+    font-weight: bold;
+  }
+}
+.u_listMarginTop5{
+  margin-top: 0.05rem !important;
+}
+.u_wrap_btn--pt40{
+  padding-top: 0.4rem !important;
+}
+.u_tips_red{
+  text-align: center;
+  margin-top: 0.15rem;
+  color: $redColor;
+}
+ .o_date{
+   font-size: .12rem;
+   color: #999;
+ }

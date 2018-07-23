@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>编辑商品</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/100_common.css">
+    <link rel="stylesheet" href="../../css/210_index.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="layout_page_content">
+        <header class="c_header l_header">
+            <div class="c_header__inner">
+                <div class="c_header__back l_header__back" tapmode=""   onclick="window.history.back();">
+                    <button type="button" class="o_icon_back"></button>
+                </div>
+                <div class="c_header__title l_header__title">
+                    <h3 class="t3">编辑商品</h3>
+                </div>
+                <div class="c_header__right l_header__right" >
+
+                </div>
+            </div>
+        </header>
+
+        <!--支付详情-->
+
+        <div class="c_paymentDetails">
+           <div class="l_wrap c_goodsItem u_listMarginTop5">
+               <div class="c_goodsTitCont">
+                   <div class="o_goodsImg">
+                       <div class="o_goodsImg__inner">
+                           <img src="../../image/goodsList_img.png" alt="">
+                       </div>
+                       <div class="o_goodsImg__showStatus o_icon_show_status">
+                           购买权
+                       </div>
+                   </div>
+                   <h3 class="o_goodsTitle">
+                       IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                   </h3>
+               </div>
+               <div class="c_goodsInfo">
+                   <div class="c_goodsInfo__left">
+                       <div class="o_countdown__small">
+                           <em class="day">0</em>:<em class="hour">1</em>:<em class="minute">25</em>:<em class="sec">59</em>
+                       </div>
+                   </div>
+                   <div class="c_goodsInfo__right">
+                       <div class="u_moneyFont">
+                           <em>500</em>元
+                       </div>
+                   </div>
+               </div>
+           </div>
+            <div class="c_singleRow l_singleRow_big mui_flex just_between u_borBot10px ">
+                <div class="c_title cell fixed">增加转卖时限</div>
+
+                <div class="  cell fixed">
+                    <div class="o_numAddSubBtn">
+                        <div class="o_add o_icon_sub"></div>
+                        <div class="o_num">2</div>
+                        <div class="o_sub  o_icon_add "></div>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="c_releaseGoods__form u_marginBottom_bigBtn">
+                <div class="c_goodsDescEdit u_borBot10px">
+                    <div class="c_goodsDescEdit__text">
+                        <textarea class="c_textarea" placeholder="请描述一下你的转卖商品购买权" ></textarea>
+                    </div>
+                    <div class="c_goodsDescEdit__voice">
+                        <div class="c_voice">
+                            <div class="icon o_icon_voice_msg"></div>
+                            <div class="text"><em>3</em>s</div>
+                            <div class="c_close o_icon_close_small"></div>
+                        </div>
+                        <div class="c_voice">
+                            <div class="icon o_icon_voice_add"></div>
+                            <div class="text">添加语音描述</div>
+                        </div>
+                        <div class="c_word_num">
+                            <em>0</em>/<em>120</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c_releaseGoods__my">
+                    <div class="c_singleRow  mui_flex just_between u_borBot1px u_pageWrap_margin">
+                        <div class="c_title cell fixed">我的商品报价</div>
+                        <div class="  cell fixed">
+                            <span class="u_redColor">500元</span>
+                        </div>
+                    </div>
+                    <div class="c_releaseGoods__inner">
+                        <div class="c_tit">编辑差价(元)</div>
+                        <input type="text" class="input_money" placeholder="请输入差价">
+                        <div class="c_tips u_redColor">*差价是您出售商品购买权可获得的利润</div>
+                    </div>
+                </div>
+                <!--去支付-->
+                <div class="o_settlement">
+                    <div class="o_mergeMoney">
+                        增加时限费: <span class="num"><em>999</em>元</span>
+                    </div>
+                    <div class="o_settlement__btn"  tapmode="" onclick="api.openWin({name:'420_goods_pay_success',url:'420_goods_pay_success.html'})">
+                        立即发布
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../../script/api.js"></script>
+    <script type="text/javascript" src="../../script/common_js.js"></script>
+
+</body>
+
+</html>

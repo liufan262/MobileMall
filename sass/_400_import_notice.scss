@@ -1,0 +1,172 @@
+/*************************
+title: 消息通知;
+ coder: 刘帆;
+ time: 2017-11-05
+  *************************/
+.o_countdown__small{
+  height: 0.17rem;
+  padding: 0 0.05rem;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  line-height: 0.17rem;
+  font-weight: bold;
+  border-radius: 0.17rem;
+  em{
+    padding: 0 0.05rem;
+  }
+}
+//消息列表
+.c_information__list{
+background-color: #fff;
+margin-bottom: 0.1rem;
+.c_information__item{
+  position: relative;
+}
+.c_information__item:last-child .c_information__inner{
+  border-bottom: none;
+}
+}
+.c_information__inner{
+  @extend %flexbox;
+  @include flex-just(space-between);
+  @include align-items(center);
+  margin: 0 0.24rem;
+  padding: 0.15rem 0;
+  border-bottom: 0.01rem solid #EBEBED;
+;
+  .c_left{
+    @extend %flexbox;
+    @include align-items(center);
+    .c_icon{
+      margin-right: 0.1rem;
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 50%;
+      img{
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+      }
+    }
+    .c_tit{
+      @include s1;
+    }
+    .c_user__msg{
+      @include flex(1);
+      font-size: 0.12rem;
+      .c_user__name{
+        height: 0.21rem;
+        line-height: 0.21rem;
+      }
+      .c_msg__cont{
+        @include line-clamp-2;
+        -webkit-line-clamp: 1;
+        color: $grayColor;
+      }
+    }
+  }
+  .c_cont{
+    text-align: right;
+    @include flex(1);
+  }
+  .c_right{
+    .c_time{
+      min-width: 0.4rem;
+      color: #999;
+      text-align: right;
+      font-size: 0.12rem;
+    }
+  }
+}
+//系统消息列表
+.c_systemInfor{
+padding-top: 0.2rem;
+}
+.c_systemInfor__item{
+  margin-bottom: 0.2rem;
+  @include pageWrap;
+  .c_systemInfor__time{
+    text-align: center;
+    margin-bottom: 0.15rem;
+    .c_time{
+      display: inline-block;
+      min-width: 0.95rem;
+      height: 0.2rem;
+      box-sizing: border-box;
+      padding: 0 0.15rem;
+      line-height: 0.2rem;
+      color: #fff;
+      text-align: center;
+      border-radius: 0.1rem;
+      background-color: #939395;
+      em{
+        padding: 0 0.02rem;
+      }
+    }
+  }
+  .c_psystemInfor__cont{
+    background-color: #fff;
+    border-radius: 0.07rem;
+    padding-top: 0.15rem;
+    .c_tit{
+      margin-bottom: 0.1rem;
+      @include t2;
+      font-weight: bold;
+      padding: 0 0.15rem ;
+    }
+    .c_cont{
+      line-height: 0.21rem;
+      padding: 0 0.15rem 0.1rem;
+    }
+    .c_check_detail{
+      width: 100%;
+      background-color: #EBEBF0;
+      height: 0.3rem;
+      line-height: 0.3rem;
+      text-align: center;
+      border-bottom-left-radius: 0.07rem;
+      border-bottom-right-radius: 0.07rem;
+    }
+  }
+}
+//消息滚动
+.c_notice_scroll{
+.c_scroll_news, .c_scroll_goods_news{
+  @extend %flexbox;
+  @include align-items(center);
+  position: absolute;
+  right: 0;
+  top: 1.02rem;
+  height: 0.2rem;
+  line-height: 0.2rem;
+  background-color: #fff;
+  padding-left: 0.15rem;
+  padding-right: 0.1rem;
+  box-shadow: 0 0.06rem 0.2rem 0 rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 0.1rem;
+  border-bottom-left-radius: 0.1rem;
+  border: 1px solid #F2F2F2;
+  border-right: none;
+  font-size: 0.12rem;
+  z-index: 1;
+  font-weight: bold;
+  .c_icon{
+    margin-right: 0.1rem;
+  }
+}
+.c_scroll_goods_news{
+  top: 1.33rem;
+  .c_user_img{
+    width: 0.16rem;
+    height: 0.16rem;
+    border-radius: 50%;
+    margin-right: 0.05rem;
+    img{
+      width: 0.16rem;
+      height: 0.16rem;
+      border-radius: 50%;
+    }
+  }
+}
+}

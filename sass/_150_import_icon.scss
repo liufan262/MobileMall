@@ -1,0 +1,697 @@
+//title: 图标;
+//coder: 刘帆;
+//time: 2017-10-23
+.icon_bg{
+display: inline-block;
+background-repeat: no-repeat;
+background-position: center center;
+}
+.o_icon_search {
+  @extend .icon_bg;
+  @include icon_size(0.28rem,0.28rem);
+  background-image: url(../image/search_icon.png);
+}
+.o_icon_checkIn {
+  @extend .icon_bg;
+  @include icon_size(0.28rem,0.28rem);
+  background-image: url(../image/ceckIn_icon.png);
+}
+.o_icon_more{
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.22rem);
+  background-image: url(../image/more_icon.png);
+}
+.o_icon_people{
+  @extend .icon_bg;
+  @include icon_size(0.1rem,0.1rem);
+  background-image: url(../image/people_icon.png);
+}
+.o_icon_star{
+  @extend .icon_bg;
+  @include icon_size(0.1rem,0.1rem);
+  background-image: url(../image/star_icon.png);
+}
+.o_icon_back{
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.22rem);
+  background-image: url(../image/back_icon.png);
+}
+.o_icon_search--small{
+  @extend .icon_bg;
+  @include icon_size(0.14rem,0.14rem);
+  background-image: url(../image/search_icon__samll.png);
+}
+.o_nav_triangle{
+  padding-right: 0.15rem;
+}
+.o_nav_triangle::after{
+  content: '';
+  display: inline-block;
+  width:0;
+  height:0;
+  position: absolute;
+  top: 0.03rem;
+  right: 0;
+  border-width:0.05rem;
+  border-style:solid dashed dashed dashed;
+  border-color: #666 transparent transparent transparent;
+  //transform: rotate(0);
+  //-webkit-transform: rotate(0);
+  //-moz-transform: rotate(0);
+  //-webkit-transition: .3s;
+}
+.o_nav_triangle.before::after{
+  top: 0.1rem;
+}
+.o_nav_triangle.before::before{
+  content: '';
+  display: inline-block;
+  width:0;
+  height:0;
+  position: absolute;
+  top: -0.05rem;
+  right: 0;
+  border-width:0.05rem;
+  transform: rotate(180deg);
+  border-style:solid dashed dashed dashed;
+  border-color:#f42d28 transparent transparent transparent;
+  //transform: rotate(0);
+  //-webkit-transform: rotate(0);
+  //-moz-transform: rotate(0);
+  //-webkit-transition: .3s;
+}
+.active.o_nav_triangle::after{
+  border-color:#f42d28 transparent transparent transparent;
+}
+.o_choose_icon--goods{
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.22rem);
+  background-image: url(../image/choose_goods_icon.png);
+}
+.more_icon--black{
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.22rem);
+  background-image: url(../image/more_icon--black.png);
+}
+.o_icon_pointer{
+  @extend .icon_bg;
+  width: 0.22rem !important;
+  height: 0.22rem !important;
+  -webkit-background-size: 0.22rem, 0.22rem !important;
+  background-size: 0.22rem, 0.22rem !important;
+  background-image: url(../image/pointer_icon.png);
+}
+.o_enter_icon{
+  @extend .icon_bg;
+  @include icon_size(0.42rem,0.42rem);
+  background-image: url(../image/enter_icon.png);
+}
+.o_icon_payAlipay{
+  @extend .icon_bg;
+  @include icon_size(0.28rem,0.28rem);
+  background-image: url(../image/payAlipay_icon.png);
+}
+.o_icon_payBalance{
+  @extend .icon_bg;
+  @include icon_size(0.28rem,0.28rem);
+  background-image: url(../image/payBalance_icon.png);
+}
+.o_icon_payWechat{
+  @extend .icon_bg;
+  @include icon_size(0.28rem,0.28rem);
+  background-image: url(../image/payWechat_icon.png);
+}
+.o_icon_payTicket{
+  @extend .icon_bg;
+  @include icon_size(0.28rem,0.28rem);
+  background-image: url(../image/payTicket_icon.png);
+}
+.o_icon_payScore{
+  @extend .icon_bg;
+  @include icon_size(0.28rem,0.28rem);
+  background-image: url(../image/payScore_icon.png);
+}
+.o_icon_payDuihuann{
+  @extend .icon_bg;
+  @include icon_size(0.28rem,0.28rem);
+  background-image: url(../image/payDuihuann_icon.png);
+}
+.o_icon_payDijia{
+  @extend .icon_bg;
+  @include icon_size(0.28rem,0.28rem);
+  background-image: url(../image/payDijia_icon.png);
+}
+.o_icon_payRuchang{
+  @extend .icon_bg;
+  @include icon_size(0.28rem,0.28rem);
+  background-image: url(../image/payRuchang_icon.png);
+}
+.o_icon_payYuuhui{
+  @extend .icon_bg;
+  @include icon_size(0.28rem,0.28rem);
+  background-image: url(../image/payYuuhui_icon.png);
+}
+.o_icon_payMember{
+  @extend .icon_bg;
+  @include icon_size(0.28rem,0.28rem);
+  background-image: url(../image/payMember_icon.png);
+}
+.o_inputRadio[type="checkbox"], .o_inputRadio[type="radio"]{
+  @extend .icon_bg;
+  width: 0.22rem !important;
+  height: 0.22rem;
+  -webkit-background-size: 0.22rem, 0.22rem;
+  background-size: 0.22rem, 0.22rem;
+  background-image: url(../image/payRadio_icon.png);
+}
+.o_inputRadio[type="checkbox"].img_none, .o_inputRadio[type="radio"].img_none{
+  opacity: 0;
+}
+.o_inputRadio[type="checkbox"]:checked, .o_inputRadio[type="radio"]:checked{
+  background-image: url(../image/payRadioCheck_icon.png);
+  opacity: 1;
+}
+.o_icon_modalClose{
+  @extend .icon_bg;
+  @include icon_size(0.35rem,0.35rem);
+  background-image: url(../image/modalClose_icon.png);
+}
+.o_icon_auction{
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.24rem);
+  background-image: url(../image/auction_icon.png);
+}
+.o_icon_disposable {
+  @extend .icon_bg;
+  @include icon_size(0.21rem,0.22rem);
+  background-image: url(../image/disposable_icon.png);
+}
+.o_icon_rule{
+  @extend .icon_bg;
+  @include icon_size(0.24rem,0.24rem);
+  background-image: url(../image/rule_icon.png);
+}
+.o_iocn_custom_service{
+  @extend .icon_bg;
+  @include icon_size(0.24rem,0.24rem);
+  background-image: url(../image/custom_service_icon.png);
+}
+.o_icon_addFriend{
+  @extend .icon_bg;
+  background-image: url(../image/addFriend_icon.png);
+  -webkit-background-size: 0.11rem 0.11rem;
+  background-size: 0.11rem 0.11rem;
+}
+.o_icon_addFriend--userHeader{
+  @extend .icon_bg;
+  background-image: url(../image/addFriend_icon.png);
+  -webkit-background-size: 0.11rem 0.11rem;
+  background-size: 0.11rem 0.11rem;
+  background-position: 0.1rem center;
+}
+.o_icon_headerClose{
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.22rem);
+  background-image: url(../image/headerTitle_icon.png);
+}
+.o_icon_examine{
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.22rem);
+  background-image: url(../image/examine_icon.png);
+}
+.o_icon_msg{
+  @extend .icon_bg;
+  @include icon_size(0.25rem,0.25rem);
+  background-image: url(../image/msg_icon.png);
+}
+.o_icon_msg--shadow{
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0.03rem 0.08rem 0 rgba(0, 0, 0, 0.2), 0 0 0 0.01rem rgba(0, 0, 0, 0.08);
+}
+.o_icon_expression{
+  @extend .icon_bg;
+  @include icon_size(0.25rem,0.25rem);
+  background-image: url(../image/expression_icon.png);
+}
+.o_icon_speech{
+  @extend .icon_bg;
+  @include icon_size(0.25rem,0.25rem);
+  background-image: url(../image/speech_icon.png);
+}
+.o_icon_champion{
+  @extend .icon_bg;
+  @include icon_size(0.17rem,0.18rem);
+  background-image: url(../image/champion_icon.png);
+}
+.o_right_arrow{
+  @extend .icon_bg;
+  @include icon_size(0.17rem,0.11rem);
+  background-image: url(../image/o_right_arrow.png);
+}
+.o_icon_sign_name{
+  @extend .icon_bg;
+  @include icon_size(0.2rem,0.2rem);
+  background-image: url(../image/sign_name.png);
+}
+.o_icon_sign_password{
+  @extend .o_icon_sign_name;
+  background-image: url(../image/sign_password.png);
+}
+.o_icon_sign_phone{
+  @extend .o_icon_sign_name;
+  background-image: url(../image/sign_phone.png);
+}
+.o_icon_sign_referee{
+  @extend .o_icon_sign_name;
+  background-image: url(../image/sign_referee.png);
+}
+.o_icon_sign_veri{
+  @extend .o_icon_sign_name;
+  background-image: url(../image/sign_veri.png);
+}
+.o_icon_sign_qq{
+  @extend .icon_bg;
+  @include icon_size(0.3rem,0.3rem);
+  background-image: url(../image/sign_qq.png);
+}
+.o_icon_sign_wechat{
+  @extend .o_icon_sign_qq;
+  background-image: url(../image/sign_wechat.png);
+}
+.o_icon_sign_weibo{
+  @extend .o_icon_sign_qq;
+  background-image: url(../image/sign_weibo.png);
+}
+.o_icon_sign_eye{
+  @extend .icon_bg;
+  @include icon_size(0.2rem,0.2rem);
+  background-image: url(../image/sign_eye.png);
+}
+.o_icon_white_arrow{
+  @extend .icon_bg;
+  @include icon_size(0.09rem,0.16rem);
+  background-image: url(../image/withe_arrow.png);
+}
+.o_icon_resell_payment{
+  @extend .icon_bg;
+  @include icon_size(0.33rem,0.26rem);
+  background-image: url(../image/resell_payment_icon.png);
+}
+.o_icon_self_payment{
+  @extend .icon_bg;
+  @include icon_size(0.33rem,0.26rem);
+  background-image: url(../image/self_payment_iocn.png);
+}
+.o_icon_receive_goods{
+  @extend .o_icon_resell_payment;
+  background-image: url(../image/receive_goods_icon.png);
+}
+.o_icon_resell_goods{
+  @extend .o_icon_resell_payment;
+  background-image: url(../image/resell_goods_icon.png);
+}
+.o_icon_inputRadio{
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.22rem);
+  background-image: url(../image/payRadio_icon.png);
+}
+.c_payMode .c_item.active .o_icon_inputRadio{
+  background-image: url(../image/payRadioCheck_icon.png);
+}
+.o_icon_inputRadioCheck{
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.22rem);
+  background-image: url(../image/payRadioCheck_icon.png);
+}
+.o_icon_add{
+  @extend .icon_bg;
+  -webkit-background-size: 0.22rem 0.22rem;
+  background-size: 0.22rem 0.22rem;
+  background-image: url(../image/add_icon.png);
+}
+.o_icon_sub{
+  @extend .icon_bg;
+  -webkit-background-size: 0.22rem 0.22rem;
+  background-size: 0.22rem 0.22rem;
+  background-image: url(../image/sub_icon.png);
+}
+.o_icon_voice_msg{
+  @extend .icon_bg;
+  @include icon_size(0.3rem,0.3rem);
+  background-image: url(../image/voice_msg_icon.png);
+}
+.o_icon_voice_add{
+  @extend .icon_bg;
+  @include icon_size(0.3rem,0.3rem);
+  background-image: url(../image/voice_add_icon.png);
+}
+.o_icon_photo_add{
+  @extend .icon_bg;
+  @include icon_size(0.3rem,0.3rem);
+  background-image: url(../image/add_photo_icon.png);
+}
+.o_icon_close_small{
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.22rem);
+  background-image: url(../image/close_small_icon.png);
+}
+.o_icon_success{
+  @extend .icon_bg;
+  @include icon_size(0.5rem,0.5rem);
+  background-image: url(../image/success_icon.png);
+}
+.o_icon_coordinate{
+  @extend .icon_bg;
+  @include icon_size(0.16rem,0.2rem);
+  background-image: url(../image/coordinate_icon.png);
+}
+.o_icon_add_dress {
+  @extend .icon_bg;
+  @include icon_size(0.5rem,0.5rem);
+  background-image: url(../image/addDress_icon.png);
+}
+.o_icon_show_status {
+  @extend .icon_bg;
+  @include icon_size(0.72rem,0.21rem);
+  background-image: url(../image/show_status_icon.png);
+}
+.o_icon_notice_resell {
+  @extend .icon_bg;
+  @include icon_size(0.4rem,0.4rem);
+  background-image: url(../image/notice_resell_icon.png);
+}
+.o_icon_notice_pren {
+  @extend .icon_bg;
+  @include icon_size(0.4rem,0.4rem);
+  background-image: url(../image/notice_pren_icon.png);
+}
+.o_icon_notice_friend {
+  @extend .icon_bg;
+  @include icon_size(0.4rem,0.4rem);
+  background-image: url(../image/notice_friend_icon.png);
+}
+.o_icon_notice_news {
+  @extend .icon_bg;
+  @include icon_size(0.17rem,0.17rem);
+  background-image: url(../image/notice_news_icon.png);
+}
+.o_icon_notice_money {
+  @extend .icon_bg;
+  @include icon_size(0.17rem,0.17rem);
+  background-image: url(../image/notice_money_icon.png);
+}
+.o_icon_notice_msg {
+  @extend .icon_bg;
+  @include icon_size(0.13rem,0.16rem);
+  background-image: url(../image/notice_msg_icon.png);
+}
+.o_icon_score_exchange_chang {
+  @extend .icon_bg;
+  @include icon_size(0.51rem,0.48rem);
+  background-image: url(../image/score_exchange_chang_icon.png);
+}
+.o_icon_score_exchange_di{
+  @extend .o_icon_score_exchange_chang;
+  background-image: url(../image/score_exchange_di_icon.png);
+}
+.o_icon_score_exchange_huan{
+  @extend .o_icon_score_exchange_chang;
+  background-image: url(../image/score_exchange_huan_icon.png);
+}
+.o_icon_score_exchange_hui{
+  @extend .o_icon_score_exchange_chang;
+  background-image: url(../image/score_exchange_hui_icon.png);
+}
+.o_icon_man {
+  @extend .icon_bg;
+  @include icon_size(0.14rem,0.14rem);
+  background-image: url(../image/man_icon.png);
+}
+.o_icon_woman {
+  @extend .icon_bg;
+  @include icon_size(0.14rem,0.14rem);
+  background-image: url(../image/woman_icon.png);
+}
+.o_icon_member {
+  @extend .icon_bg;
+  @include icon_size(0.18rem,0.18rem);
+  background-image: url(../image/member_icon.png);
+}
+.o_icon_member {
+  @extend .icon_bg;
+  @include icon_size(0.18rem,0.18rem);
+  background-image: url(../image/member_icon.png);
+}
+.o_icon_member_grow {
+  @extend .icon_bg;
+  @include icon_size(0.38rem,0.38rem);
+  background-image: url(../image/member_grow_icon.png);
+}
+.o_icon_member_level {
+  @extend .o_icon_member_grow;
+  background-image: url(../image/member_level_icon.png);
+}
+.o_icon_memberRights_1{
+  @extend .icon_bg;
+  @include icon_size(0.4rem,0.4rem);
+  background-image: url(../image/memberRights_icon_1.png);
+}
+.o_icon_memberRights_2 {
+  @extend .o_icon_memberRights_1;
+  background-image: url(../image/memberRights_icon_2.png);
+}
+.o_icon_memberRights_3 {
+  @extend .o_icon_memberRights_1;
+  background-image: url(../image/memberRights_icon_3.png);
+}
+.o_icon_memberRights_4 {
+  @extend .o_icon_memberRights_1;
+  background-image: url(../image/memberRights_icon_4.png);
+}
+.o_icon_memberRights_5 {
+  @extend .o_icon_memberRights_1;
+  background-image: url(../image/memberRights_icon_5.png);
+}
+.o_icon_memberRights_6 {
+  @extend .o_icon_memberRights_1;
+  background-image: url(../image/memberRights_icon_6.png);
+}
+.o_icon_memberRights_7 {
+  @extend .o_icon_memberRights_1;
+  background-image: url(../image/memberRights_icon_7.png);
+}
+.o_icon_other_success {
+  @extend .icon_bg;
+  @include icon_size(0.4rem,0.4rem);
+  background-image: url(../image/other_success_icon.png);
+}
+.o_icon_other_wait {
+  @extend .o_icon_other_success;
+  background-image: url(../image/other_wait_icon.png);
+}
+.o_icon_assess_start {
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.22rem);
+  background-image: url(../image/assess_start_none_icon.png);
+}
+.o_icon_assess_start.active {
+  background-image: url(../image/assess_start_icon.png);
+}
+.o_icon_address_book {
+  @extend .icon_bg;
+  @include icon_size(0.17rem,0.17rem);
+  background-image: url(../image/address_book_icon.png);
+}
+.o_icon_edit {
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.22rem);
+  background-image: url(../image/edit_icon.png);
+}
+.o_icon_info_msg{
+  @extend .o_icon_edit;
+  background-image: url(../image/info_msg_icon.png);
+  position: relative;
+}
+.o_icon_text_bgm{
+  @extend .icon_bg;
+  @include icon_size(0.5rem,0.19rem);
+  background-image: url(../image/text_bgm_img.png);
+}
+.o_icon_size_22{
+  @extend .icon_bg;
+  @include icon_size(0.22rem,0.22rem);
+}
+.o_icon_cart_add{
+  @extend .o_icon_size_22;
+  background-image: url(../image/cart_add_icon.png);
+}
+.o_icon_collect{
+  @extend .o_icon_size_22;
+  background-image: url(../image/collect_icon.png);
+}
+.o_icon_share{
+  @extend .o_icon_size_22;
+  background-image: url(../image/share_icon.png);
+}
+.o_icon_edit_gray{
+  @extend .o_icon_size_22;
+  background-image: url(../image/edit_gray_icon.png);
+}
+.o_icon_search_icon--lit{
+  @extend .o_icon_size_22;
+  background-image: url(../image/search_icon--lit.png);
+}
+.o_icon_coupon_dijia {
+  @extend .icon_bg;
+  @include icon_size(0.93rem,0.68rem);
+  background-image: url(../image/coupon_dijia_icon.png);
+}
+.o_icon_coupon_ruchang {
+  @extend .icon_bg;
+  @include icon_size(0.93rem,0.68rem);
+  background-image: url(../image/coupon_ruchang_icon.png);
+}
+.o_icon_coupon_wuxiao-small {
+  @extend .icon_bg;
+  @include icon_size(0.93rem,0.68rem);
+  background-image: url(../image/coupon_wuxiao-small_icon.png);
+}
+.o_icon_coupon_duanhuan {
+  @extend .icon_bg;
+  @include icon_size(0.93rem,0.85rem);
+  background-image: url(../image/coupon_duanhuan_icon.png);
+}
+.o_icon_coupon_youhui {
+  @extend .icon_bg;
+  @include icon_size(0.93rem,0.85rem);
+  background-image: url(../image/coupon_youhui_icon.png);
+}
+.o_icon_coupon_wuxiao {
+  @extend .icon_bg;
+  @include icon_size(0.93rem,0.85rem);
+  background-image: url(../image/coupon_wuxiao_icon.png);
+}
+.o_icon_invalid_coupons{
+  @extend .o_icon_size_22;
+  background-image: url(../image/invali_dcoupons_icon.png);
+}
+.o_icon_exchange_mall_score{
+  @extend .o_icon_size_22;
+  background-image: url(../image/exchange_mall_score.png);
+}
+.o_icon_exchange_mall_coupon{
+  @extend .o_icon_size_22;
+  background-image: url(../image/exchange_mall_coupon.png);
+}
+.o_icon_exchange_mall_diamond{
+  @extend .o_icon_size_22;
+  background-image: url(../image/exchange_mall_diamond.png);
+}
+.o_icon_exchange_mall_gem{
+  @extend .o_icon_size_22;
+  background-image: url(../image/exchange_mall_gem.png);
+}
+.o_icon_exchange_mall_1 {
+  @extend .icon_bg;
+  @include icon_size(0.45rem,0.45rem);
+  background-image: url(../image/exchange_mall_1.png);
+}
+.o_icon_exchange_mall_2 {
+  @extend .o_icon_exchange_mall_1;
+  background-image: url(../image/exchange_mall_2.png);
+}
+.o_icon_exchange_mall_3 {
+  @extend .o_icon_exchange_mall_1;
+  background-image: url(../image/exchange_mall_3.png);
+}
+.o_icon_modal_chang{
+  @extend .icon_bg;
+  @include icon_size(0.47rem,0.47rem);
+  background-image: url(../image/modal_chang.png);
+}
+.o_icon_modal_diamond{
+  @extend .o_icon_modal_chang;
+  background-image: url(../image/modal_diamond.png);
+}
+.o_icon_modal_dijia{
+  @extend .o_icon_modal_chang;
+  background-image: url(../image/modal_dijia.png);
+}
+.o_icon_modal_gem{
+  @extend .o_icon_modal_chang;
+  background-image: url(../image/modal_gem.png);
+}
+.o_icon_modal_huan{
+  @extend .o_icon_modal_chang;
+  background-image: url(../image/modal_huan.png);
+}
+.o_icon_modal_hui{
+  @extend .o_icon_modal_chang;
+  background-image: url(../image/modal_hui.png);
+}
+.o_icon_modal_score{
+  @extend .o_icon_modal_chang;
+  background-image: url(../image/modal_score.png);
+}
+.o_icon_wallet_admittance{
+  @extend .icon_bg;
+  @include icon_size(1.11rem,1.11rem);
+  background-image: url(../image/wallet_admittance_icon.png);
+}
+.o_icon_wallet_balance{
+  @extend .o_icon_wallet_admittance;
+  background-image: url(../image/wallet_balance_icon.png);
+}
+.o_icon_wallet_discount{
+  @extend .o_icon_wallet_admittance;
+  background-image: url(../image/wallet_discount_icon.png);
+}
+.o_icon_wallet_exchange{
+  @extend .o_icon_wallet_admittance;
+  background-image: url(../image/wallet_exchange_icon.png);
+}
+.o_icon_wallet_offset{
+  @extend .o_icon_wallet_admittance;
+  background-image: url(../image/wallet_offset_icon.png);
+}
+.o_icon_wallet_props{
+  @extend .o_icon_wallet_admittance;
+  background-image: url(../image/wallet_props_icon.png);
+}
+.o_icon_wallet_score{
+  @extend .o_icon_wallet_admittance;
+  background-image: url(../image/wallet_score_icon.png);
+}
+.o_icon_member_gift{
+  @extend .icon_bg;
+  @include icon_size(0.19rem,0.19rem);
+  background-image: url(../image/member_gift_icon.png);
+}
+.o_icon_modal_wrong{
+  @extend .icon_bg;
+  @include icon_size(0.5rem,0.5rem);
+  background-image: url(../image/modal_wrong_icon.png);
+}
+.o_icon_balance_cash{
+  @extend .o_icon_size_22;
+  background-image: url(../image/balance_cash_icon.png);
+}
+.o_icon_checkIn_dacheng{
+  @extend .icon_bg;
+  @include icon_size(0.5rem,0.5rem);
+  background-image: url(../image/checkIn_dacheng.png);
+}
+.o_icon_checkIn_lingqu{
+  @extend .o_icon_checkIn_dacheng;
+  background-image: url(../image/checkIn_lingqu.png);
+}
+.o_icon_checkIn_month{
+  @extend .o_icon_checkIn_dacheng;
+  background-image: url(../image/checkIn_month.png);
+}
+.o_icon_checkIn_weudacheng{
+  @extend .o_icon_checkIn_dacheng;
+  background-image: url(../image/checkIn_weudacheng.png);
+}
+ 

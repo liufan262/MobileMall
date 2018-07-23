@@ -1,0 +1,207 @@
+/************************* title: 模态弹出框;
+ coder: 刘帆;
+ time: 2017-10-28 *************************/
+
+//毛玻璃遮罩层
+.o_glassMask{
+position: fixed;
+z-index: 1001;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(255,255,255,.8);
+}
+.o_bigBtn{
+  color: #fff;
+  background: -webkit-linear-gradient(45deg,#f90,#f50);
+}
+//模态弹出框
+.c_modal{
+box-sizing: border-box;
+;
+width: 2.5rem;
+border-radius: 0.1rem;
+background-color: #fff;
+box-shadow: 0 0.16rem 0.4rem 0.07rem rgba(0,0,0,0.06);
+.c_header__tit{
+  text-align: center;
+  font-weight: bold;
+}
+.c_modal__body{
+  .l_desc{
+    line-height: 0.22rem;
+  }
+  .c_desc--tacenter{
+    text-align: center;
+  }
+  .c_coupons__modal{
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+}
+.c_modal__footer{
+  padding-bottom: 0.12rem;
+}
+}
+.c_modal__header{
+  text-align: center;
+  position: relative;
+  .c_header__icon{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: solid 5px #fff;
+    margin-top: -0.48rem;
+    display: inline-block;
+    position: relative;
+    top: -0.1rem;
+  }
+}
+.l_modal{
+  //position: fixed;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
+  padding: 0.3rem 0.25rem 0.3rem;
+  //z-index: 1100;
+  .l_header__tit{
+    margin-bottom: 0.16rem;
+  }
+  .l_modal__body{
+    .l_desc{
+      padding: 0.05rem 0;
+    }
+  }
+  .l_modal__closeBtn{
+    position: absolute;
+    left: 50%;
+    bottom: -0.17rem;
+    margin-left: -0.17rem;
+    border: solid 1px #eee;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
+//参与竞价
+// 支付方式列表
+.c_payment__list{
+.c_item{
+  border-bottom: 0.01rem solid #EBEBED;
+}
+.c_item:last-child{
+  border:none;
+}
+}
+.l_payment{
+  .l_payment__list{
+    margin-bottom: 0.1rem;
+  }
+}
+.c_pay__singleRow{
+  .c_pay__icon{
+    margin-right: 0.04rem;
+  }
+  .c_input{
+    font-size: 0.18rem;
+  }
+  .c_input::-webkit-input-placeholder {
+    color: $grayColor_a1;
+  }
+}
+.l_pay__singleRow{
+  padding: 0.12rem 0;
+}
+.l_pay__singleRow--recharge{
+  padding: 0.15rem 0;
+}
+.l_pay__singleRow--recharge--input{
+  padding: 0.17rem 0;
+}
+.c_pay__singleRow--title{
+  .c_tit{
+    @include t2;
+    font-weight: bold;
+  }
+  .c_text{
+    color: $grayColor_a1;
+  }
+}
+//弹出框 从底部位置
+.c_modal--bottom{
+.c_btn__list{
+  @extend %flexbox;
+  @include flex-just(space-between);
+  .c_btn__item{
+    text-align: center;
+    .c_icon{
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius:50%;
+      box-shadow: 0 0.04rem 0.1rem 0 rgba(188,188,204,0.3);
+      background-color: #fff;
+    }
+  }
+}
+}
+.l_modal--bottom{
+  //position: fixed;
+  //left: 0;
+  //bottom:0;
+  //width: 100%;
+  //z-index:1101;
+  //box-sizing: border-box;
+  padding: 0 0.39rem;
+  .c_btn__item{
+    .c_icon{
+      margin-bottom: 0.15rem;
+    }
+  }
+  .l_modal__footer{
+    padding-top: 0.45rem;
+    padding-bottom: 0.1rem;
+    text-align: center;
+  }
+}
+.c_memberGift__list{
+  margin: 0 -0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0.15rem;
+  .c_memberGift__item{
+    width: 33.33%;
+    text-align: center;
+    margin-bottom: 0.25rem;
+  }
+  .c_memberGift__item .c_icon{
+    margin-bottom: 0.1rem;
+  }
+}
+.u_wrap_btn--recharge{
+  margin-bottom: 0.25rem;
+}
+//默认弹出窗
+.c_footer_btn{
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+height: 0.42rem;
+border-top: 0.01rem solid #E1E1F0;
+padding-top: 0.07rem;
+position: absolute;
+left: 0.12rem;
+bottom: 0;
+width: 2.7rem;
+}
+.c_footer_btn .c_btn{
+  flex: 1;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  text-align: center;
+}
+.c_footer_btn .c_btn:last-child{
+  color: #0A83FF;
+  border-left: 0.01rem solid #E1E1F0;
+}

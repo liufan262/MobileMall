@@ -1,0 +1,871 @@
+//title: 商品列表;
+//coder: 刘帆;
+//time: 2017-10-26
+.c_goodsList {
+  .c_item {
+  }
+}
+
+.l_goodsList {
+  .l_item {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.c_userTop {
+  @extend %flexbox;
+  @include flex-just(space-between);
+  @include align-items(center);
+  .c_leftUser {
+    @extend %flexbox;
+    @include flex-just(space-between);
+    @include align-items(center);
+    .c_name {
+      font-size: $primaryFontSize;
+      color: #555;
+    }
+  }
+  .l_rightBtn {
+    color: $grayColor;
+  }
+}
+
+.l_userTop {
+  margin-bottom: 0.12rem;
+}
+
+.o_userImg {
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  img {
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+  }
+}
+
+.l_userImg {
+  margin-right: 0.12rem;
+}
+
+.o_userImg--small {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  img {
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+  }
+}
+
+.l_userImg--small {
+  margin-right: 0.1rem;
+}
+
+//商品列表标题
+.o_goodsImg {
+  border-radius: 0.04rem;
+  position: relative;
+  .o_goodsImg__inner {
+    width: 100%;
+    max-width: 6.4rem;
+    height: 1.1rem;
+    border-radius: 0.04rem;
+    img {
+      width: 100%;
+      max-width: 6.4rem;
+      height: 1.1rem;
+      border-radius: 0.04rem;
+    }
+  }
+}
+
+.o_goodsImg__showStatus {
+  position: absolute;
+  right: 0rem;
+  top: -0.04rem;
+  text-align: center;
+  line-height: 0.21rem;
+  color: #fff;
+  font-size: $primaryFontSize;
+}
+
+.o_goodsTitle {
+  @include t2;
+  @include line-clamp-2;
+  margin: 0.15rem 0;
+  line-height: 0.28rem;
+  font-weight: bold;
+}
+
+//商品信息
+.c_goodsInfo {
+  @extend %flexbox;
+  @include flex-just(space-between);
+  @include align-items(center);
+  color: $grayColor;
+}
+.c_goodsInfo__left{
+  font-size: 0;
+  -webkit-text-size-adjust:none;
+}
+.o_moreDetail {
+  color: $grayColor;
+    i{
+      @include s2;
+    }em{
+       @include s2;
+     }
+
+}
+
+.o_moreDetail__icon {
+  margin-right: 0.1rem;
+}
+
+.l_moreDetail {
+  margin-right: 0.15rem;
+}
+
+.o_auctionTime {
+  color: $grayColor;
+}
+
+.l_goods_details {
+  padding-top: .3rem;
+  .l_details__title {
+    margin-bottom: 0.2rem;
+    .l_goodsTitCont {
+      margin-bottom: 0.15rem;
+    }
+  }
+}
+
+//mui_flex 框架
+.mui_flex {
+  @extend %flexbox;
+  @include flex-wrap(wrap);
+  &.align-center {
+    @include align-items(center);
+  }
+  &.just_between {
+    @include flex-just(space-between);
+  }
+  > .cell {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    -webkit-flex-basis: 0;
+    flex-basis: 0;
+    max-width: 100%;
+    padding: 0 !important;
+    position: relative;
+  }
+  > .cell.fixed {
+    -webkit-box-flex: 0 !important;
+    -webkit-flex: none !important;
+    -ms-flex: none !important;
+    flex: none !important;
+    width: auto;
+  }
+}
+
+//用户排名
+// 图文详情
+.c_PhotoDetail__desc {
+}
+
+.o_PhotoDetail_img {
+  max-width: 100%;
+  img {
+    max-width: 100%;
+  }
+}
+
+.o_par {
+  line-height: 0.22rem;
+}
+
+.l_PhotoDetail__desc {
+  .l_PhotoDetail_img {
+    margin-bottom: 0.18rem;
+  }
+  .l_par {
+    margin-bottom: 0.18rem;
+  }
+}
+
+.u_margBotColor {
+  @include margBotColor;
+}
+
+//单一行
+.c_singleRow {
+  @include pageWrap;
+  height: 0.45rem;
+  @include align-items(center);
+  .c_title {
+    @include s1;
+    margin-right: 0.09rem;
+    width: 0.56rem;
+    font-weight: bold;
+  }
+  .c_content {
+    text-align: right;
+    color: $grayColor;
+    line-height: 0.18rem;
+  }
+  .c_content--primaryColor {
+    text-align: right;
+    color: #000000;
+    line-height: 0.18rem;
+  }
+  .c_pointer {
+  }
+}
+
+.l_singleRow_big {
+  @extend .c_singleRow;
+  height: auto;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+//用户一排头像
+.c_userRowImg {
+  .c_userRowImg__list {
+    @extend %flexbox;
+    @include align-items(center);
+    @include flex-dir(row-reverse);
+    .c_item {
+      width: 0.26rem;
+      height: 0.26rem;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      margin-left: -0.05rem;
+      img {
+        width: 0.26rem;
+        height: 0.26rem;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+//用户评价
+.c_userEval__list {
+  @include pageWrap;
+  padding-bottom: 0.55rem;
+  .c_item {
+    padding-top: 0.2rem;
+    .c_userTop .c_leftUser .c_name{
+      font-size: .12rem;
+      color: #000;
+    }
+  }
+}
+
+.c_userEval__list--mall {
+  padding-bottom: 0.2rem;
+}
+
+.c_evalInfo {
+  padding-left: 0.35rem;
+  .c_pro {
+    @include s2;
+    line-height: 0.18rem;
+    padding-top: 0.06rem;
+    padding-bottom: 0.08rem;
+  }
+}
+
+.o_evalImg_list {
+  @extend %flexbox;
+  @include flex-wrap(wrap);
+  margin: 0 -0.04rem;
+  .img {
+    width: calc(25% - 0.08rem);
+    height: 0.62rem;
+    margin: 0 0.04rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//参与竞价入口
+.o_partEnter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  height: 0.42rem;
+  background-color: rgba(255, 255, 255, .95);
+  .o_partEnter__btn {
+    position: absolute;
+    left: 50%;
+    top: -0.18rem;
+    margin-left: -0.26rem;
+    width: 0.52rem;
+    height: 0.52rem;
+    border: 5px solid rgba(255, 255, 255, .95);
+    border-radius: 50%;
+  }
+}
+
+.o_paragraph {
+  padding: 0.2rem 0;
+  line-height: 0.21rem;
+}
+
+//参与用户列表
+.c_partUser__list {
+  .c_partUser__item {
+    border-bottom: solid 0.01rem #ededed;
+    padding: 0.15rem 0;
+    .c_userImg {
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 50%;
+      img {
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.o_userAdd_btn {
+  min-width: 0.55rem;
+  height: 0.2rem;
+  line-height: 0.2rem;
+  border-radius: 0.04rem;
+  border: solid 1px #BCBCCC;
+  text-align: center;
+  @include s2;
+  box-sizing: border-box;
+  padding: 0 0.04rem;
+  background-color: #fff;
+}
+
+.o_userAdd_btn--userHeader {
+  min-width: 0.72rem;
+  height: 0.2rem;
+  line-height: 0.2rem;
+  border-radius: 0.04rem;
+  border: solid 1px #BCBCCC;
+  text-align: left;
+  @include s2;
+  box-sizing: border-box;
+  padding: 0 0.04rem;
+  background-color: #fff;
+  text-indent: 0.2rem;
+}
+
+//用户详情
+.c_userHeader {
+  @extend %flexbox;
+  @include flex-dir(column);
+  @include align-items(center);
+  .c_user_img {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    img {
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+    }
+  }
+  .c_user_name {
+    text-align: center;
+    padding: 0.15rem 0;
+  }
+}
+
+.l_userHeader {
+  margin-bottom: 0.3rem;
+}
+
+//标题切换
+.c_navTaps {
+  @extend %flexbox;
+  @include flex-just(space-around);
+  border-bottom: solid 0.01rem #EBEBED;
+  margin-bottom: 0.3rem;
+  .c_item {
+    .c_tit {
+      color: $grayColor;
+      display: inline-block;
+      min-width: 0.42rem;
+      padding: 0 0.1rem;
+      padding-bottom: 0.1rem;
+      text-align: center;
+      border-bottom: 0.02rem solid transparent;
+    }
+  }
+  .c_item.active {
+    .c_tit {
+      color: $primaryColor;
+      border-bottom: 0.02rem solid #000;
+    }
+  }
+}
+
+//切换内容
+.c_tab_content {
+  .c_tab_pane {
+    display: none;
+  }
+  .c_tab_pane.active {
+    display: block;
+  }
+}
+
+//发布报价
+.c_bigHeader--small {
+  @extend .c_bigHeader;
+  margin-top: 0.07rem;
+  padding-bottom: 0.4rem;
+  @extend %flexbox;
+  @include flex-just(space-between);
+}
+
+.c_myQuote {
+  .c_myQuote__tit {
+    @extend %flexbox;
+    padding-top: 0.1rem;
+    margin-bottom: 0.4rem;
+    .tit {
+      font-size: 0.22rem;
+      margin-right: 0.1rem;
+    }
+  }
+}
+
+//对话组件
+.c_dialog {
+  position: absolute;
+  left: 0;
+  top: 1.69rem;
+  width: 100%;
+  height: calc(100% - 2.24rem);
+  overflow: hidden;
+  overflow-y: auto;
+  .c_dialog__list {
+    @extend %flexbox;
+    @include flex-dir(column-reverse);
+    .c_dialog__item {
+      padding: 0.2rem 0.24rem;
+    }
+    .c_other_infor {
+      text-align: center;
+      .c_text {
+        display: inline-block;
+        min-width: 0.95rem;
+        height: 0.2rem;
+        box-sizing: border-box;
+        padding: 0 0.15rem;
+        line-height: 0.2rem;
+        color: #fff;
+        text-align: center;
+        border-radius: 0.1rem;
+        background-color: #BFBFBF;
+      }
+    }
+    .c_user {
+      @extend %flexbox;
+      @include align-items(center);
+      margin-bottom: 0.03rem;
+      .c_user_img {
+        width: 0.22rem;
+        height: 0.22rem;
+        border-radius: 50%;
+        margin-right: 0.1rem;
+        img {
+          width: 0.22rem;
+          height: 0.22rem;
+          border-radius: 50%;
+        }
+      }
+    }
+    .c_dialog_content {
+      margin-left: 0.32rem;
+      margin-right: 0.35rem;
+      .c_cont {
+        padding: 0.11rem 0.15rem;
+        background-color: #F5F5F9;
+        border-radius: 0.1rem;
+        border-top-left-radius: 0;
+        display: inline-block;
+        position: relative;
+        .c_dialog__pro {
+          line-height: 0.22rem;
+        }
+        .c_voice {
+          display: inline-block;
+          width: 0.5rem;
+          text-align: right;
+          position: relative;
+          color: #689987;
+          .c_unread {
+            display: inline-block;
+            width: 0.07rem;
+            height: 0.07rem;
+            border-radius: 50%;
+            background-color: $redColor;
+            position: absolute;
+            top: 50%;
+            right: -0.3rem;
+            margin-top: -0.03rem;
+          }
+        }
+      }
+    }
+    .c_dialog__other {
+      .c_cont:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -0.06rem;
+        width: 0.1rem;
+        height: 0.06rem;
+        background: url("../image/dialog_left_icon.png") no-repeat center center;
+        -webkit-background-size: 0.1rem 0.06rem;
+        background-size: 0.1rem 0.06rem;
+      }
+    }
+    .c_dialog__self {
+      .c_user {
+        @include flex-dir(row-reverse);
+        .c_user_img {
+          margin-right: 0;
+          margin-left: 0.1rem;
+        }
+      }
+      .c_dialog_content {
+        margin-left: 0.35rem;
+        margin-right: 0.32rem;
+        @extend %flexbox;
+        @include flex-dir(row-reverse);
+        .c_cont {
+          background-color: #A5F1D6;
+          border-top-left-radius: 0.1rem;
+          border-top-right-radius: 0;
+          .c_voice {
+            .c_unread {
+              left: -0.3rem;
+            }
+          }
+        }
+        .c_cont:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: -0.06rem;
+          width: 0.1rem;
+          height: 0.06rem;
+          background: url("../image/dialog_right_icon.png") no-repeat center center;
+          -webkit-background-size: 0.1rem 0.06rem;
+          background-size: 0.1rem 0.06rem;
+        }
+      }
+    }
+  }
+  .c_dialog__box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.55rem;
+    border-top: $borBottom;
+    background-color: #F5F5F9;
+    @extend %flexbox;
+    @include align-items(center);
+    .c_btn {
+      margin: 0 0.17rem;
+    }
+    .c_ipnut {
+      @include flex(1);
+      height: 0.37rem;
+      border-radius: 0.04rem;
+      background-color: #fff;
+      box-sizing: border-box;
+      padding: 0 0.1rem;
+      line-height: 0.37rem;
+    }
+  }
+}
+
+.l_dialog--goods {
+  top: 1.9rem;
+  height: calc(100% - 2.45rem);
+}
+
+.c_dialog_goods_details {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: inherit;
+  .c_dialog__list .c_dialog__item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.c_dialog__big {
+  top: 0.55rem;
+  height: calc(100% - 1.11rem);
+}
+
+//用户排名
+.c_userRanking {
+  @include pageWrap;
+  padding-bottom: 0.7rem;
+  .c_userRanking__list {
+    .c_item {
+      border-bottom: $borBottom;
+    }
+    .c_item:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.c_userRanking__row {
+  padding: 0.15rem 0;
+  .c_user {
+    .c_ranking__num {
+      width: 0.17rem;
+      text-align: center;
+      font-size: 0.16rem;
+      font-weight: bold;
+      margin-right: 0.1rem;
+    }
+    .c_ranking__img {
+      margin-right: 0.1rem;
+    }
+  }
+  .c_ticket {
+    text-align: center;
+  }
+}
+
+//查看进度按钮
+.o_checkProgress {
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+  height: 0.3rem;
+  margin-left: -0.15rem;
+  padding: 0 0.1rem 0 0.15rem;
+  line-height: 0.3rem;
+  color: #fff;
+  border-top-left-radius: 0.15rem;
+  border-bottom-left-radius: 0.15rem;
+  background: -webkit-linear-gradient(left, #f42d28, #ff8363) no-repeat;
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(244, 45, 40, .4);
+}
+
+//抽奖页面
+.c_activity_rule {
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  .c_tit {
+    font-size: 0.22rem;
+    margin-bottom: 0.16rem;
+    font-weight: bold;
+  }
+  p {
+    line-height: 0.22rem;
+  }
+}
+
+.c_lottery {
+  width: 3.6rem;
+  height: 3.4rem;
+  margin: 0 auto;
+  position: relative;
+  .c_lottery__cont {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    .c_lottery__inner {
+      width: 1.77rem;
+      height: 1.77rem;
+      position: relative;
+      margin: 0 auto;
+      padding-top: 1.3rem;
+      background: url("../image/lottery_wrap_img.png") no-repeat center center;
+      -webkit-background-size: 1.77rem 1.77rem;
+      background-size: 1.77rem 1.77rem;
+      .c_btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -0.47rem;
+        margin-top: -0.5rem;
+        width: 0.98rem;
+        height: 0.98rem;
+        border-radius: 50%;
+        background: url("../image/lottery_btn.png") no-repeat center center;
+        -webkit-background-size: 1rem 1rem;
+        background-size: 1rem 1rem;
+        box-shadow: 0 0 0.2rem 0 rgba(244, 45, 40, 0.4);
+      }
+      .c_btn::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "抽奖";
+        width: 100%;
+        height: 100%;
+        line-height: 1rem;
+        font-size: 0.24rem;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+      }
+      .c_btn.active {
+        background-image: url(../image/lottery_btn_dong.gif);
+      }
+      .c_btn.active::after {
+        content: "loading";
+        font-size: 0.12rem;
+      }
+    }
+  }
+  .c_lotteryIcon__list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    .c_lotteryIcon__itm {
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: absolute;
+      .c_text {
+        position: absolute;
+        font-size: 0.12rem;
+        white-space: nowrap;
+      }
+    }
+    .c_lotteryIcon__itm.item1 {
+      @include icon_size(0.46rem, 0.64rem);
+      background-image: url(../image/lottery_icon_1.png);
+      top: 0.15rem;
+      left: 1.63rem;
+      .c_text {
+        top: 0.35rem;
+        left: 0.33rem;
+      }
+    }
+    .c_lotteryIcon__itm.item2 {
+      @include icon_size(0.46rem, 0.66rem);
+      background-image: url(../image/lottery_icon_2.png);
+      right: 0.54rem;
+      top: 0.58rem;
+      .c_text {
+        top: 0.47rem;
+        left: 0.27rem;
+      }
+    }
+    .c_lotteryIcon__itm.item3 {
+      @include icon_size(0.53rem, 0.74rem);
+      background-image: url(../image/lottery_icon_3.png);
+      right: 0.2rem;
+      top: 1.7rem;
+      .c_text {
+        left: -0.07rem;
+        top: 0.5rem;
+      }
+    }
+    .c_lotteryIcon__itm.item4 {
+      @include icon_size(0.51rem, 0.63rem);
+      background-image: url(../image/lottery_icon_4.png);
+      top: 2.53rem;
+      right: 0.93rem;
+      .c_text {
+        top: 0.5rem;
+        left: -0.1rem;
+      }
+    }
+    .c_lotteryIcon__itm.item5 {
+      @include icon_size(0.51rem, 0.63rem);
+      background-image: url(../image/lottery_icon_5.png);
+      top: 2.53rem;
+      left: 1.07rem;
+      .c_text {
+        top: 0.5rem;
+        left: -0.1rem;
+      }
+    }
+    .c_lotteryIcon__itm.item6 {
+      @include icon_size(0.54rem, 0.73rem);
+      background-image: url(../image/lottery_icon_6.png);
+      top: 1.7rem;
+      left: 0.34rem;
+      .c_text {
+        left: -0.12rem;
+        top: 0.55rem;
+      }
+    }
+    .c_lotteryIcon__itm.item7 {
+      @include icon_size(0.42rem, 0.68rem);
+      background-image: url(../image/lottery_icon_7.png);
+      left: 0.6rem;
+      top: 0.56rem;
+      .c_text {
+        top: 0.47rem;
+        left: -0.44rem;
+      }
+    }
+  }
+}
+
+//星球
+.c_planet_page{
+  background-color: #202332;
+  body{
+    background-color: #202332;
+    .layout_page_content{
+      background-color: #202332;
+      .l_header{
+        background-color: #202332;
+      }
+    }
+    .nav_cont{
+      background-color: #343645;
+
+      .menu{
+        border-top: none;
+      }
+      .menu.main_btn .semicircle {
+        border: none;
+        background-color: #343645;
+        .semicircle__inner{
+          background-color: #343645;
+        }
+      }
+
+    }
+  }
+}
+
+.c_planet__img{
+  width: 3.6rem;
+  height: 3.6rem;
+  background: url("../image/planet_img.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}

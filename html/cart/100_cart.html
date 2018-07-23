@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/100_common.css">
+    <link rel="stylesheet" href="../../css/210_index.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+         .c_bigHeader{
+            padding-bottom: 0.05rem;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+            background: #fff;
+            transition: all cubic-bezier(0, 0, 0.2, 1) .3s;
+            margin-top: 0;
+            width: 100%;
+            box-sizing: border-box;
+       }
+        .c_bigHeader .bigTitle{
+            padding-top: 0.44rem;
+            transition: all cubic-bezier(0, 0, 0.2, 1) .3s;
+       }
+        .c_bigHeader .t1{
+            transition: all cubic-bezier(0, 0, 0.2, 1) .3s;
+       }
+        .c_bigHeader.active .bigTitle{
+            padding-top: 0.15rem;
+       }
+        .c_bigHeader.active .t1{
+            font-size: 0.17rem !important;
+       }
+        .l_slider{
+            padding-top: 1rem;
+       }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="layout_page_content" style=" overflow-y: auto;">
+        <header class="c_bigHeader" >
+           <div class="bigTitle" >
+               <h1 class="t1">购物车</h1>
+               <div class="l_btn ">
+                   <button class="l_item o_icon_edit"></button>
+                   <button class="l_item o_icon_info_msg"></button>
+               </div>
+               <div class="c_text_btn hide">
+                   <button type="button">完成</button>
+               </div>
+           </div>
+        </header>
+
+
+        <!--购物车订单列表-->
+
+        <form class="c_cartOther" style="padding-top: .30rem;">
+
+            <ul class="c_cartOther__list">
+                <li class="c_cartOther__item">
+                    <label class="c_select">
+                        <input type="checkbox" class="c_check o_inputRadio"/>
+                    </label>
+                    <div class="c_goodsTitCont--small">
+                        <div class="c_goodsTitCont__img--small">
+                            <img src="../../image/payment_img.png" alt="">
+                            <i class="o_goodsImg__showStatus o_icon_show_status h">转卖</i>
+                            <span class="c_goodsImgCountdown__inner "><em class="day">0</em>:<em
+                                    class="hour">1</em>:<em class="minute">25</em>:<em
+                                    class="sec">59</em></span>
+                        </div>
+                        <div class="c_goodsTitCont__info--small">
+                            <h5 class="c_goodsTitCont__tit--small">
+                                Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                i5处理器/8G内存/128G闪存
+                            </h5>
+                            <div class="c_goodsTitCont__tips--small ">
+                                <span class="c_money">4500元</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="c_cartOther__item">
+                    <label class="c_select">
+                        <input type="checkbox" class="c_check o_inputRadio"/>
+                    </label>
+                    <div class="c_goodsTitCont--small">
+                        <div class="c_goodsTitCont__img--small">
+                            <img src="../../image/payment_img.png" alt="">
+                            <i class="o_goodsImg__showStatus o_icon_show_status h">转卖</i>
+                            <span class="c_goodsImgCountdown__inner "><em class="day">0</em>:<em
+                                    class="hour">1</em>:<em class="minute">25</em>:<em
+                                    class="sec">59</em></span>
+                        </div>
+                        <div class="c_goodsTitCont__info--small">
+                            <h5 class="c_goodsTitCont__tit--small">
+                                Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                i5处理器/8G内存/128G闪存
+                            </h5>
+                            <div class="c_goodsTitCont__tips--small ">
+                                <span class="c_money">4500元</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="c_cartOther__item">
+                    <label class="c_select">
+                        <input type="checkbox" class="c_check o_inputRadio"/>
+                    </label>
+                    <div class="c_goodsTitCont--small">
+                        <div class="c_goodsTitCont__img--small">
+                            <img src="../../image/payment_img.png" alt="">
+                            <i class="o_goodsImg__showStatus o_icon_show_status h">转卖</i>
+                            <span class="c_goodsImgCountdown__inner "><em class="day">0</em>:<em
+                                    class="hour">1</em>:<em class="minute">25</em>:<em
+                                    class="sec">59</em></span>
+                        </div>
+                        <div class="c_goodsTitCont__info--small">
+                            <h5 class="c_goodsTitCont__tit--small">
+                                Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core
+                                i5处理器/8G内存/128G闪存
+                            </h5>
+                            <div class="c_goodsTitCont__tips--small ">
+                                <span class="c_money">4500元</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--去支付-->
+            <div class="o_settlement o_settlement_footer">
+                <label class="c_select">
+                    <input type="checkbox" class="c_check o_inputRadio"/><span>全选</span>
+                </label>
+                <div class="o_mergeMoney">
+                    合并: <span class="num"><em>999</em>元</span>
+                </div>
+                <div class="o_settlement__btn"  onclick="window.location.href='110_cart_write_other.html'" >
+                    付款
+                </div>
+            </div>
+        </form>
+
+
+        <!--底部导航-->
+        <footer class="nav_cont">
+           <div class="main menu"  onclick="window.location.href='main.html'" >
+                <span class="nav_icon main_icon "></span>
+            </div>
+            <div class="mall menu"  onclick="window.location.href='../mall/100_mall.html'" >
+                <span class="nav_icon mall_icon"></span>
+            </div>
+             <div class="main_btn menu"  onclick="window.location.href='../main/planet.html'" >
+                <span class=" cont_icon">
+                    <span class="semicircle">
+                        <span class="semicircle__inner">
+
+                        </span>
+                    </span>
+                    <span class="earth_icon"></span>
+                    <span class="earth_icon_border"></span>
+                </span>
+            </div>
+            <div class="cart menu" >
+                <span class="nav_icon car_icon active"></span>
+            </div>
+            <div class="my menu"  onclick="window.location.href='../my/100_my.html'" >
+                <span class="nav_icon my_icon"></span>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="../../script/api.js"></script>
+    <script type="text/javascript" src="../../script/common_js.js"></script>
+    <script type="text/javascript" src="../../script/zepto.min.js"></script>
+    <script>
+    $(function () {
+        $(".layout_page_content").scroll(function(e){
+            var top = $(this).scrollTop();
+            if (top >= 9) {
+                $(".c_bigHeader").addClass("active");
+            } else {
+                $(".c_bigHeader").removeClass("active");
+            }
+
+        });
+
+
+
+    });
+    </script>
+</body>
+
+</html>

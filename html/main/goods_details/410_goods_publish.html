@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>发布商品</title>
+    <link rel="stylesheet" href="../../../css/api.css">
+    <link rel="stylesheet" href="../../../css/100_common.css">
+    <link rel="stylesheet" href="../../../css/210_index.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="layout_page_content">
+        <header class="c_header l_header">
+            <div class="c_header__inner">
+                <div class="c_header__back l_header__back">
+
+                </div>
+                <div class="c_header__title l_header__title">
+                    <h3 class="t3">发布商品</h3>
+                </div>
+                <div class="c_header__right l_header__right" tapmode=""  onclick="window.history.back();">
+                    <button type="button" class="o_icon_headerClose"></button>
+                </div>
+            </div>
+        </header>
+
+        <!--支付详情-->
+
+        <div class="c_paymentDetails">
+            <div class="c_paymentDetails--countdown u_borBot1px">
+                <div class="c_goodsTitCont--small">
+                    <div class="c_goodsTitCont__img--small">
+                        <img src="../../../image/payment_img.png" alt="">
+                        <i class="o_goodsImg__showStatus o_icon_show_status hide">购买权</i>
+                    </div>
+                    <div class="c_goodsTitCont__info--small">
+                        <h5 class="c_goodsTitCont__tit--small">
+                            Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存Macbook Pro 13.3笔记本电脑 Core i5处理器/8G内存/128G闪存
+                        </h5>
+                        <div class="c_goodsTitCont__tips--small just_end">
+                            <div class="c_resell__time">
+                                转卖时限：<em>2</em>天
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="c_releaseGoods__form u_marginBottom_bigBtn">
+                <div class="c_goodsDescEdit u_borBot10px">
+                    <div class="c_goodsDescEdit__text">
+                        <textarea class="c_textarea" placeholder="请描述一下你的转卖商品购买权" ></textarea>
+                    </div>
+                    <div class="c_goodsDescEdit__voice">
+                        <div class="c_voice">
+                            <div class="icon o_icon_voice_msg"></div>
+                            <div class="text"><em>3</em>s</div>
+                            <div class="c_close o_icon_close_small"></div>
+                        </div>
+                        <div class="c_voice">
+                            <div class="icon o_icon_voice_add"></div>
+                            <div class="text">添加语音描述</div>
+                        </div>
+                        <div class="c_word_num">
+                            <em>0</em>/<em>120</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c_releaseGoods__my">
+                    <div class="c_singleRow  mui_flex just_between u_borBot1px u_pageWrap_margin">
+                        <div class="c_title cell fixed">我的商品报价</div>
+                        <div class="  cell fixed">
+                            <span class="u_redColor">500元</span>
+                        </div>
+                    </div>
+                    <div class="c_releaseGoods__inner">
+                        <div class="c_tit">编辑差价(元)</div>
+                        <input type="text" class="input_money" placeholder="请输入差价">
+                        <div class="c_tips u_redColor">*差价是您出售商品购买权可获得的利润</div>
+                    </div>
+                </div>
+                <div class="o_enterBtn--footer" onclick="window.location.href='400_goods_payment.html'" >
+                    <button class="o_primaryBtn">恭喜您获得购买权，去支付</button>
+                </div>
+            </form>
+
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../../../script/api.js"></script>
+    <script type="text/javascript" src="../../../script/common_js.js"></script>
+    <script>
+
+        switchTab=function(index,target,parentBox){
+
+            var lis=$api.domAll('.'+target+' li');
+            for( var i=0;i<lis.length;i++){
+                $api.removeCls(lis[i],'active');
+            }
+            $api.addCls(lis[index-1],'active');
+
+            var contents=$api.domAll('.'+parentBox+'>div');
+            console.log(contents);
+            for( var j=0;j<contents.length;j++){
+                $api.removeCls(contents[j],'active');
+            }
+            $api.addCls(contents[index-1],'active');
+        }
+    </script>
+</body>
+
+</html>

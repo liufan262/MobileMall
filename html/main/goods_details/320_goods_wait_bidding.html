@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>等待公布竞价</title>
+    <link rel="stylesheet" href="../../../css/api.css">
+    <link rel="stylesheet" href="../../../css/100_common.css">
+    <link rel="stylesheet" href="../../../css/210_index.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div class="layout_page_content">
+    <header class="c_header l_header">
+        <div class="c_header__inner">
+            <div class="c_header__back l_header__back">
+            </div>
+            <div class="c_header__title l_header__title">
+            </div>
+            <div class="c_header__right l_header__right" tapmode="" onclick="window.history.back();">
+                <button type="button" class="o_icon_headerClose"></button>
+            </div>
+        </div>
+        <div class="c_bigHeader--small">
+            <h1 class="t1">等待公布竞价</h1>
+            <div class="l_btn">
+                <button class="o_icon_msg o_icon_msg--shadow"></button>
+            </div>
+        </div>
+    </header>
+
+    <ul class="c_navTaps title_nav u_marBttoNnoe u_bigHeader_pt77">
+        <li class="c_item active" tapmode="" onclick="switchTab(1,'title_nav','tab_content')">
+            <span class="c_tit">群聊</span>
+        </li>
+        <li class="c_item" tapmode="" onclick="switchTab(2,'title_nav','tab_content')">
+            <span class="c_tit">参与用户</span>
+        </li>
+        <li class="c_item" tapmode="" onclick="switchTab(3,'title_nav','tab_content')">
+            <span class="c_tit">我的报价</span>
+        </li>
+        <li class="c_item" tapmode="" onclick="switchTab(4,'title_nav','tab_content')">
+            <span class="c_tit">商品状态</span>
+        </li>
+    </ul>
+
+    <div class=" tab_content c_tab_content">
+        <div class="tab_pane  c_tab_pane active" tapmode=""
+             onclick="api.openWin({name:'330_price_ranking',url:'330_price_ranking.html'})">
+
+            <!--对话组件-->
+            <div class="c_dialog l_dialog">
+                <div class="c_dialog__list">
+                    <div class="c_dialog__item c_dialog__self">
+                        <div class="c_user">
+                                <span class="c_user_img">
+                                    <img src="../../../image/eval_img.png" alt="">
+                                </span>
+                            <span class="c_user_name">
+                                    张小北
+                                </span>
+                        </div>
+                        <div class="c_dialog_content">
+                            <div class="c_cont">
+                                <p class="c_dialog__pro">
+                                    撒士大夫的啊实打
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_dialog__item c_dialog__other">
+                        <div class="c_user">
+                                <span class="c_user_img">
+                                    <img src="../../../image/eval_img.png" alt="">
+                                </span>
+                            <span class="c_user_name">
+                                    张小北
+                                </span>
+                        </div>
+                        <div class="c_dialog_content">
+                            <div class="c_cont">
+                                <p class="c_dialog__pro">
+                                    撒士大夫的啊实打实大苏打发士大夫发 撒士大夫的啊实打实大苏打发士大夫发 撒士大夫的啊实打实大苏打发士大夫发
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c_other_infor"><span class="c_text">来自沈阳市的李白参与了竞价比拼</span></div>
+                    <div class="c_dialog__item c_dialog__other">
+                        <div class="c_user">
+                                <span class="c_user_img">
+                                    <img src="../../../image/eval_img.png" alt="">
+                                </span>
+                            <span class="c_user_name">
+                                    张小北
+                                </span>
+                        </div>
+                        <div class="c_dialog_content">
+                            <div class="c_cont">
+                                   <span class="c_voice">
+                                       <span class="time"><em>9</em>”</span>
+                                       <i class="c_unread"></i>
+                                   </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_dialog__item c_dialog__self">
+                        <div class="c_user">
+                                <span class="c_user_img">
+                                    <img src="../../../image/eval_img.png" alt="">
+                                </span>
+                            <span class="c_user_name">
+                                    张小北
+                                </span>
+                        </div>
+                        <div class="c_dialog_content">
+                            <div class="c_cont">
+                                   <span class="c_voice">
+                                       <span class="time"><em>9</em>”</span>
+                                       <i class="c_unread "></i>
+                                   </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_dialog__item c_dialog__self">
+                        <div class="c_user">
+                                <span class="c_user_img">
+                                    <img src="../../../image/eval_img.png" alt="">
+                                </span>
+                            <span class="c_user_name">
+                                    张小北
+                                </span>
+                        </div>
+                        <div class="c_dialog_content">
+                            <div class="c_cont">
+                                <p class="c_dialog__pro">
+                                    撒士大夫的啊实打
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_other_infor"><span class="c_text">来自沈阳市的李白参与了竞价比拼</span></div>
+                    <div class="c_dialog__item c_dialog__other">
+                        <div class="c_user">
+                                <span class="c_user_img">
+                                    <img src="../../../image/eval_img.png" alt="">
+                                </span>
+                            <span class="c_user_name">
+                                    张小北
+                                </span>
+                        </div>
+                        <div class="c_dialog_content">
+                            <div class="c_cont">
+                                   <span class="c_voice">
+                                       <span class="time"><em>9</em>”</span>
+                                       <i class="c_unread u_hide"></i>
+                                   </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_dialog__item c_dialog__self">
+                        <div class="c_user">
+                                <span class="c_user_img">
+                                    <img src="../../../image/eval_img.png" alt="">
+                                </span>
+                            <span class="c_user_name">
+                                    张小北
+                                </span>
+                        </div>
+                        <div class="c_dialog_content">
+                            <div class="c_cont">
+                                <p class="c_dialog__pro">
+                                    撒士大夫的啊实打
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c_dialog__box">
+                    <button class="c_btn o_icon_speech"></button>
+                    <input type="text" class="c_ipnut">
+                    <button class="c_btn o_icon_expression"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab_pane c_tab_pane">
+            <div class="l_wrap">
+                <div class="c_partUser">
+                    <ul class="c_partUser__list">
+                        <li class="c_partUser__item">
+                            <div class="c_userTop ">
+                                <div class="c_leftUser">
+                                    <span class="c_userImg l_userImg"><img src="../../../image/user_1_img.jpg"
+                                                                           alt=""></span>
+                                    <span class="c_name l_name">frank liu</span>
+                                </div>
+                                <div class="l_rightBtn">
+                                    <button class="o_userAdd_btn o_icon_addFriend" type="button"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="c_partUser__item">
+                            <div class="c_userTop ">
+                                <div class="c_leftUser">
+                                    <span class="c_userImg l_userImg"><img src="../../../image/user_1_img.jpg"
+                                                                           alt=""></span>
+                                    <span class="c_name l_name">frank liu</span>
+                                </div>
+                                <div class="l_rightBtn">
+                                    <button class="o_userAdd_btn o_icon_addFriend" type="button"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="c_partUser__item">
+                            <div class="c_userTop ">
+                                <div class="c_leftUser">
+                                    <span class="c_userImg l_userImg"><img src="../../../image/user_1_img.jpg"
+                                                                           alt=""></span>
+                                    <span class="c_name l_name">frank liu</span>
+                                </div>
+                                <div class="l_rightBtn">
+                                    <button class="o_userAdd_btn" type="button">已发送</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="c_partUser__item">
+                            <div class="c_userTop ">
+                                <div class="c_leftUser">
+                                    <span class="c_userImg l_userImg"><img src="../../../image/user_1_img.jpg"
+                                                                           alt=""></span>
+                                    <span class="c_name l_name">frank liu</span>
+                                </div>
+                                <div class="l_rightBtn">
+                                    <button class="o_userAdd_btn o_icon_addFriend" type="button"></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab_pane c_tab_pane">
+            <div class="l_wrap">
+                <form class="c_payment l_payment">
+                    <ul class="c_payment__list l_payment__list">
+                        <li class="c_item">
+                            <div class="c_singleRow  mui_flex just_between u_borderBto u_paddLeftRight">
+                                <div class="c_title cell fixed">评价晒单</div>
+
+                                <div class="  cell fixed u_redColor">
+                                    <span class="money">500</span>元抵用券
+                                </div>
+                            </div>
+                        </li>
+                        <li class="c_item">
+                            <div class="c_singleRow  mui_flex just_between u_borderBto u_paddLeftRight">
+                                <div class="c_title cell fixed">评价晒单</div>
+
+                                <div class="  cell fixed u_redColor">
+                                    <span class="money">500</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="tab_pane c_tab_pane">
+            <div class="l_wrap">
+                <ul class="c_goodsList l_goodsList">
+                    <li class="c_item l_item">
+                        <div class="c_goodsTitCont">
+                            <div class="o_goodsImg">
+                                <div class="o_goodsImg__inner">
+                                    <img src="../../../image/goodsList_img.png" alt="">
+                                </div>
+                            </div>
+                            <h3 class="o_goodsTitle">
+                                IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                            </h3>
+                        </div>
+                        <div class="c_goodsInfo">
+                            <div class="c_goodsInfo__left">
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_people "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_star "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                            </div>
+                            <div class="c_goodsInfo__right">
+                                    <span class="o_auctionTime">
+                                        <em class="hour">5</em>小时<em class="hour">29</em>分<em class="second">30</em>秒结束竞拍
+                                    </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="c_item l_item">
+                        <div class="c_goodsTitCont">
+                            <div class="o_goodsImg">
+                                <div class="o_goodsImg__inner">
+                                    <img src="../../../image/goodsList_img.png" alt="">
+                                </div>
+                            </div>
+                            <h3 class="o_goodsTitle">
+                                IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                            </h3>
+                        </div>
+                        <div class="c_goodsInfo">
+                            <div class="c_goodsInfo__left">
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_people "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_star "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                            </div>
+                            <div class="c_goodsInfo__right">
+                                    <span class="o_auctionTime">
+                                        <em class="hour">5</em>小时<em class="hour">29</em>分<em class="second">30</em>秒结束竞拍
+                                    </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="c_item l_item">
+                        <div class="c_goodsTitCont">
+                            <div class="o_goodsImg">
+                                <div class="o_goodsImg__inner">
+                                    <img src="../../../image/goodsList_img.png" alt="">
+                                </div>
+                            </div>
+                            <h3 class="o_goodsTitle">
+                                IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                            </h3>
+                        </div>
+                        <div class="c_goodsInfo">
+                            <div class="c_goodsInfo__left">
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_people "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_star "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                            </div>
+                            <div class="c_goodsInfo__right">
+                                    <span class="o_auctionTime">
+                                        <em class="hour">5</em>小时<em class="hour">29</em>分<em class="second">30</em>秒结束竞拍
+                                    </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="c_item l_item">
+                        <div class="c_goodsTitCont">
+                            <div class="o_goodsImg">
+                                <div class="o_goodsImg__inner">
+                                    <img src="../../../image/goodsList_img.png" alt="">
+                                </div>
+                            </div>
+                            <h3 class="o_goodsTitle">
+                                IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                            </h3>
+                        </div>
+                        <div class="c_goodsInfo">
+                            <div class="c_goodsInfo__left">
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_people "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_star "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                            </div>
+                            <div class="c_goodsInfo__right">
+                                    <span class="o_auctionTime">
+                                        <em class="hour">5</em>小时<em class="hour">29</em>分<em class="second">30</em>秒结束竞拍
+                                    </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--模态弹出框  参与竞价 保留旧版-->
+<div class="c_modal l_modal" style="display: none;">
+    <div class="c_modal__header">
+        <h2 class="t2 c_header__tit l_header__tit">
+            参与竞价
+        </h2>
+    </div>
+    <div class="c_modal__body l_modal__body">
+        <div class="c_desc l_desc">
+            当前商品竞价需支付xx元入场券，您可以选择支付入场券或使用账户内的入场券.
+        </div>
+        <!--支付方式-->
+        <form class="c_payment l_payment">
+            <ul class="c_payment__list l_payment__list">
+                <li class="c_item l_item">
+                    <label class="c_pay__singleRow l_pay__singleRow mui_flex align-center just_between">
+                                   <span class="cell fixed mui_flex align-center">
+                                       <span class="c_pay__icon o_icon_payBalance"></span>
+                                       <span class="c_pay__name">
+                                           账户余额: <em class="money">3003</em>元
+                                       </span>
+                                   </span>
+                        <input class="o_inputRadio cell fixed" type="radio" name="payRadioOptions" checked="checked">
+                    </label>
+                </li>
+                <li class="c_item">
+                    <label class="c_pay__singleRow l_pay__singleRow mui_flex align-center just_between">
+                                    <span class="cell fixed mui_flex align-center">
+                                        <span class="c_pay__icon o_icon_payWechat"></span>
+                                        <span class="c_pay__name">
+                                           微信支付
+                                       </span>
+                                    </span>
+                        <input class="o_inputRadio cell fixed" type="radio" name="payRadioOptions">
+                    </label>
+                </li>
+                <li class="c_item">
+                    <label class="c_pay__singleRow l_pay__singleRow mui_flex align-center just_between">
+                                    <span class="cell fixed mui_flex align-center">
+                                        <span class="c_pay__icon o_icon_payAlipay"></span>
+                                        <span class="c_pay__name">
+                                           支付宝
+                                       </span>
+                                    </span>
+                        <input class="o_inputRadio cell fixed" type="radio" name="payRadioOptions">
+                    </label>
+                </li>
+                <li class="c_item">
+                    <label class="c_pay__singleRow l_pay__singleRow mui_flex align-center just_between">
+                                    <span class="cell fixed mui_flex align-center">
+                                        <span class="c_pay__icon o_icon_payWechat"></span>
+                                        <span class="c_pay__name">
+                                           入场券
+                                       </span>
+                                    </span>
+                        <input class="o_inputRadio cell fixed" type="radio" name="payRadioOptions">
+                    </label>
+                </li>
+            </ul>
+            <button type="submit" class="o_primaryBtn"><span class="money">30</span>元 入场券</button>
+        </form>
+    </div>
+    <div class="c_modal__footer">
+        <button class="o_icon_modalClose l_modal__closeBtn" type="button"></button>
+    </div>
+</div>
+
+<div class="c_modal l_modal"style="display: none;" >
+    <div class="c_modal__header">
+        <div class="c_header__icon"></div>
+        <h2 class="t2 c_header__tit l_header__tit">
+            设置提醒成功
+        </h2>
+    </div>
+    <div class="c_modal__body l_modal__body">
+        <div class="c_desc l_desc">
+            不要气馁，获得购买权用户支付后，平台将返还您随机金额优惠券。因您未获得购买权使用的抵价券依然有效，参加其他商品竞价可使用。
+        </div>
+        <div class="c_coupons__modal">
+        </div>
+
+        <button type="submit" class="o_primaryBtn">确定</button>
+    </div>
+    <div class="c_modal__footer">
+        <button class="o_icon_modalClose l_modal__closeBtn" type="button"></button>
+    </div>
+</div>
+
+<div class="c_modal l_modal" style="display: none">
+    <div class="c_modal__header">
+        <div class="c_header__icon"></div>
+        <h2 class="t2 c_header__tit l_header__tit">
+            设置提醒成功
+        </h2>
+    </div>
+    <div class="c_modal__body l_modal__body">
+        <div class="c_desc l_desc">
+            竞价时间已到，人数未凑足竞价截止；赠送您1张兑换券已发放到账户
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../../../script/api.js"></script>
+<script type="text/javascript" src="../../../script/js_third_party_lib/layer.js"></script>
+<script type="text/javascript" src="../../../script/common_js.js"></script>
+<script>
+
+    switchTab = function (index, target, parentBox) {
+
+        var lis = $api.domAll('.' + target + ' li');
+        for (var i = 0; i < lis.length; i++) {
+            $api.removeCls(lis[i], 'active');
+        }
+        $api.addCls(lis[index - 1], 'active');
+
+        var contents = $api.domAll('.' + parentBox + '>div');
+        console.log(contents);
+        for (var j = 0; j < contents.length; j++) {
+            $api.removeCls(contents[j], 'active');
+        }
+        $api.addCls(contents[index - 1], 'active');
+    }
+    //模态弹出框  参与竞价
+    function auctionBtn() {
+        layer.close(0);
+        layer.open({
+            type: 1,
+            content: '<div class="c_modal l_modal">\n' +
+            '    <div class="c_modal__header">\n' +
+            '        <div class="c_header__icon o_icon_success"></div>\n' +
+            '        <h2 class="t2 c_header__tit l_header__tit">\n' +
+            '            设置提醒成功\n' +
+            '        </h2>\n' +
+            '    </div>\n' +
+            '    <div class="c_modal__body l_modal__body">\n' +
+            '        <div class="c_desc l_desc">\n' +
+            '            竞价时间已到，人数未凑足竞价截止；赠送您1张兑换券已发放到账户\n' +
+            '        </div>\n' +
+            '\n' +
+            '    </div>\n' +
+            '\n' +
+            '</div>',
+            anim: 'scale',
+            style: 'box-shadow:none;',
+            shade: ' background: rgba(255, 255, 255, 0.9);'
+        });
+    }
+
+
+
+    function auctionBtn_1() {
+        layer.open({
+            type: 1,
+            content: '<div class="c_modal l_modal">\n' +
+            '    <div class="c_modal__header">\n' +
+            '        <div class="c_header__icon o_icon_modal_wrong" ></div>\n' +
+            '        <h2 class="t2 c_header__tit l_header__tit">\n' +
+            '            人数不足，竞价截止\n' +
+            '        </h2>\n' +
+            '    </div>\n' +
+            '    <div class="c_modal__body l_modal__body">\n' +
+            '        <div class="c_desc l_desc">\n' +
+            '            竞价时间已到，人数未凑足竞价截止；赠送您1张兑换券已发放到账户\n' +
+            '        </div>\n' +
+            '        <div class="c_coupons__modal">\n' +
+            '            <ul class="c_coupons__list">\n' +
+            '                <li class="c_coupons__item">\n' +
+            '                    <label class="c_coupons__cont mui_flex align-center just_between">\n' +
+            '                    <span class="c_coupons__tit cell fixed o_icon_coupon_youhui">\n' +
+            '                        <span class="c_couponsValue">¥<em>50</em></span>\n' +
+            '                    </span>\n' +
+            '                        <span class="c_coupons__info cell ">\n' +
+            '                        <span class="c_coupons__desc">50元兑换券</span>\n' +
+            '                        <span class="c_coupons__time">2017.08.09-2017.08.08</span>\n' +
+            '                    </span>\n' +
+            '                    </label>\n' +
+            '                </li>\n' +
+            '            </ul>\n' +
+            '        </div>\n' +
+            '\n' +
+            '        <button type="submit" class="o_primaryBtn" onclick="auctionBtn();">确定</button>\n' +
+            '    </div>\n' +
+            '    <div class="c_modal__footer">\n' +
+            '        <button class="o_icon_modalClose l_modal__closeBtn" type="button" onclick="auctionBtn();"></button>\n' +
+            '    </div>\n' +
+            '</div>',
+            anim: 'scale',
+            style: 'box-shadow:none;',
+            shade: ' background: rgba(255, 255, 255, 0.9);'
+        });
+    }
+
+    auctionBtn_1();
+</script>
+
+</body>
+
+</html>

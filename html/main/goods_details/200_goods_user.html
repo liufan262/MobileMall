@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>用户详情</title>
+    <link rel="stylesheet" href="../../../css/api.css">
+    <link rel="stylesheet" href="../../../css/100_common.css">
+    <link rel="stylesheet" href="../../../css/210_index.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="layout_page_content">
+        <header class="c_header l_header">
+            <div class="c_header__inner">
+                <div class="c_header__back l_header__back" tapmode=""  onclick="window.history.back();">
+                    <button type="button" class="o_icon_back"></button>
+                </div>
+                <div class="c_header__title l_header__title">
+                </div>
+                <div class="c_header__right l_header__right">
+                </div>
+            </div>
+        </header>
+        <!--用户详情-->
+        <div class="c_userHeader l_userHeader">
+            <div class="c_user_img">
+                <img src="../../../image/eval_img.png" alt="">
+            </div>
+            <div class="c_user_name">
+                Frank LIU
+            </div>
+            <button class="o_userAdd_btn--userHeader o_icon_addFriend--userHeader" type="button">加好友</button>
+        </div>
+
+
+        <!--标题切换-->
+
+        <ul class="c_navTaps title_nav">
+            <li class="c_item active" tapmode=""  onclick="switchTab(1,'title_nav','tab_content')">
+                <span class="c_tit">获利记录</span>
+            </li>
+            <li class="c_item"  tapmode=""  onclick="switchTab(2,'title_nav','tab_content')">
+                <span class="c_tit">转卖记录</span>
+            </li>
+        </ul>
+
+        <!--切换内容-->
+        <div class=" tab_content c_tab_content">
+            <div class="tab_pane  c_tab_pane active">
+                <div class="l_wrap">
+
+                    <ul class="c_goodsList l_goodsList">
+                        <li class="c_item l_item">
+                            <div class="c_goodsTitCont">
+                                <div class="o_goodsImg">
+                                    <div class="o_goodsImg__inner">
+                                        <img src="../../../image/goodsList_img.png" alt="">
+                                    </div>
+                                </div>
+                                <h3 class="o_goodsTitle">
+                                    IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                                </h3>
+                            </div>
+                            <div class="c_goodsInfo">
+                                <div class="c_goodsInfo__left">
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_people "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_star "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                </div>
+                                <div class="c_goodsInfo__right">
+                                    <span class="o_auctionTime">
+                                        <em class="hour">5</em>小时<em class="hour">29</em>分<em class="second">30</em>秒结束竞拍
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="c_item l_item">
+                            <div class="c_goodsTitCont">
+                                <div class="o_goodsImg">
+                                    <div class="o_goodsImg__inner">
+                                        <img src="../../../image/goodsList_img.png" alt="">
+                                    </div>
+                                </div>
+                                <h3 class="o_goodsTitle">
+                                    IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                                </h3>
+                            </div>
+                            <div class="c_goodsInfo">
+                                <div class="c_goodsInfo__left">
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_people "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_star "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                </div>
+                                <div class="c_goodsInfo__right">
+                                    <span class="o_auctionTime">
+                                        <em class="hour">5</em>小时<em class="hour">29</em>分<em class="second">30</em>秒结束竞拍
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab_pane c_tab_pane">
+                <div class="l_wrap">
+                    <ul class="c_goodsList l_goodsList">
+                        <li class="c_item l_item">
+                            <div class="c_goodsTitCont">
+                                <div class="o_goodsImg">
+                                    <div class="o_goodsImg__inner">
+                                        <img src="../../../image/goodsList_img.png" alt="">
+                                    </div>
+                                </div>
+                                <h3 class="o_goodsTitle">
+                                    IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                                </h3>
+                            </div>
+                            <div class="c_goodsInfo">
+                                <div class="c_goodsInfo__left">
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_people "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_star "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                </div>
+                                <div class="c_goodsInfo__right">
+                                    <span class="o_auctionTime">
+                                        <em class="hour">5</em>小时<em class="hour">29</em>分<em class="second">30</em>秒结束竞拍
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="c_item l_item">
+                            <div class="c_goodsTitCont">
+                                <div class="o_goodsImg">
+                                    <div class="o_goodsImg__inner">
+                                        <img src="../../../image/goodsList_img.png" alt="">
+                                    </div>
+                                </div>
+                                <h3 class="o_goodsTitle">
+                                    IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                                </h3>
+                            </div>
+                            <div class="c_goodsInfo">
+                                <div class="c_goodsInfo__left">
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_people "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_star "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                </div>
+                                <div class="c_goodsInfo__right">
+                                    <span class="o_auctionTime">
+                                        <em class="hour">5</em>小时<em class="hour">29</em>分<em class="second">30</em>秒结束竞拍
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="c_item l_item">
+                            <div class="c_goodsTitCont">
+                                <div class="o_goodsImg">
+                                    <div class="o_goodsImg__inner">
+                                        <img src="../../../image/goodsList_img.png" alt="">
+                                    </div>
+                                </div>
+                                <h3 class="o_goodsTitle">
+                                    IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                                </h3>
+                            </div>
+                            <div class="c_goodsInfo">
+                                <div class="c_goodsInfo__left">
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_people "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_star "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                </div>
+                                <div class="c_goodsInfo__right">
+                                    <span class="o_auctionTime">
+                                        <em class="hour">5</em>小时<em class="hour">29</em>分<em class="second">30</em>秒结束竞拍
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="c_item l_item">
+                            <div class="c_goodsTitCont">
+                                <div class="o_goodsImg">
+                                    <div class="o_goodsImg__inner">
+                                        <img src="../../../image/goodsList_img.png" alt="">
+                                    </div>
+                                </div>
+                                <h3 class="o_goodsTitle">
+                                    IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                                </h3>
+                            </div>
+                            <div class="c_goodsInfo">
+                                <div class="c_goodsInfo__left">
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_people "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                    <span class="o_moreDetail l_moreDetail">
+                                        <i class="o_moreDetail__icon o_icon_star "></i>
+                                        <em class="o_moreDetail__text">56</em>
+                                    </span>
+                                </div>
+                                <div class="c_goodsInfo__right">
+                                    <span class="o_auctionTime">
+                                        <em class="hour">5</em>小时<em class="hour">29</em>分<em class="second">30</em>秒结束竞拍
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../../../script/api.js"></script>
+    <script type="text/javascript" src="../../../script/common_js.js"></script>
+    <script>
+
+        switchTab=function(index,target,parentBox){
+
+            var lis=$api.domAll('.'+target+' li');
+            for( var i=0;i<lis.length;i++){
+                $api.removeCls(lis[i],'active');
+            }
+            $api.addCls(lis[index-1],'active');
+
+            var contents=$api.domAll('.'+parentBox+'>div');
+            console.log(contents);
+            for( var j=0;j<contents.length;j++){
+                $api.removeCls(contents[j],'active');
+            }
+            $api.addCls(contents[index-1],'active');
+        }
+    </script>
+</body>
+
+</html>

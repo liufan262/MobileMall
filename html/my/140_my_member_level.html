@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>会员等级</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/100_common.css">
+    <link rel="stylesheet" href="../../css/210_index.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="layout_page_content">
+        <header class="c_header l_header c_header__member">
+            <div class="c_header__inner">
+                <div class="c_header__back l_header__back" tapmode=""   onclick="window.history.back();">
+                    <button type="button" class="o_icon_back"></button>
+                </div>
+                <div class="c_header__title l_header__title">
+                    <h3 class="t3">会员等级</h3>
+                </div>
+                <div class="c_header__right l_header__right">
+                </div>
+            </div>
+        </header>
+
+
+        <div class="c_memberLevel u_borBot10px">
+            <div class="c_memberLevel__title">
+                <h3>会员成长体系</h3>
+                <p>开通会员每天获得10点成长值</p>
+            </div>
+            <div class="c_memberLevel__cont">
+                <ul class="c_member_level__list">
+                    <li class="c_memberLevel__item vip1 active">
+                        <div class="c_memberLevel__inner">
+                            <div class="c_coordinate">
+                                <div class="c_coordinate_img">
+                                    <div class="c_img">
+                                        <img src="../../image/user_1_img.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="c_coordinate_position"></div>
+                            </div>
+                            <div class="c_num">0</div>
+                            <div class="c_line"></div>
+                            <div class="c_tit">VIP1</div>
+                        </div>
+                    </li>
+                    <li class="c_memberLevel__item vip2">
+                        <div class="c_memberLevel__inner">
+
+                            <div class="c_num">200</div>
+                            <div class="c_line"></div>
+                            <div class="c_tit">VIP2</div>
+                        </div>
+                    </li>
+                    <li class="c_memberLevel__item vip3">
+                        <div class="c_memberLevel__inner">
+
+                            <div class="c_num">400</div>
+                            <div class="c_line"></div>
+                            <div class="c_tit">VIP3</div>
+                        </div>
+                    </li>
+                    <li class="c_memberLevel__item vip4">
+                        <div class="c_memberLevel__inner">
+
+                            <div class="c_num">800</div>
+                            <div class="c_line"></div>
+                            <div class="c_tit">VIP4</div>
+                        </div>
+                    </li>
+                    <li class="c_memberLevel__item vip5">
+                        <div class="c_memberLevel__inner">
+
+                            <div class="c_num">1600</div>
+                            <div class="c_line"></div>
+                            <div class="c_tit">VIP5</div>
+                        </div>
+                    </li>
+                    <li class="c_memberLevel__item vip6">
+                        <div class="c_memberLevel__inner">
+
+                            <div class="c_num">3200</div>
+                            <div class="c_line"></div>
+                            <div class="c_tit">VIP6</div>
+                        </div>
+                    </li>
+                    <li class="c_memberLevel__item vip7">
+                        <div class="c_memberLevel__inner">
+
+                            <div class="c_num">6400</div>
+                            <div class="c_line"></div>
+                            <div class="c_tit">VIP7</div>
+                        </div>
+                    </li>
+                    <li class="c_memberLevel__item vip8">
+                        <div class="c_memberLevel__inner">
+                            <div class="c_coordinate hide">
+                                <div class="c_coordinate_img">
+                                    <div class="c_img">
+                                        <img src="../../image/user_1_img.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="c_coordinate_position"></div>
+                            </div>
+                            <div class="c_num">12800</div>
+                            <div class="c_line"></div>
+                            <div class="c_tit">VIP8</div>
+                        </div>
+                    </li>
+                    <li class="c_memberLevel__item vip9">
+                        <div class="c_memberLevel__inner">
+                            <div class="c_coordinate hide">
+                                <div class="c_coordinate_img">
+                                    <div class="c_img">
+                                        <img src="../../image/user_1_img.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="c_coordinate_position"></div>
+                            </div>
+                            <div class="c_num">25600</div>
+                            <div class="c_line"></div>
+                            <div class="c_tit">VIP9</div>
+                        </div>
+                    </li>
+                </ul>
+                <canvas class="c_memberLine" id="memberLine"  height="360" width="    height: 260;" ></canvas>
+            </div>
+
+        </div>
+
+        <div class="u_wrap_btn u_wrap_btn--pt40" onclick="api.openWin({name:'130_my_member_open',url:'130_my_member_open.html'})" >
+            <button type="submit" class="o_primaryBtn">开通会员</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../script/api.js"></script>
+    <script type="text/javascript" src="../../script/common_js.js"></script>
+    <script>
+        memberLine = document.getElementById("memberLine");
+        ctx = memberLine.getContext("2d");
+        ctx.setLineDash([2,5]);
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "#ccc";
+        ctx.beginPath();
+        ctx.moveTo(15, 280);
+        ctx.bezierCurveTo(120, 230, 150, 180, 280,10);
+        ctx.stroke();
+    </script>
+</body>
+
+</html>

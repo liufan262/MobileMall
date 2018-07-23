@@ -1,0 +1,25 @@
+ @charset "utf-8";
+/*************************
+title: 项目css集合;
+coder:  刘帆;
+time: 2017-10-23
+*************************/
+//@import  url('flex.css');               //flex兼容性库
+@import "flex";
+
+@import "110_import_lib_via";             //变量定义
+@import "120_import_lib_mixins";          //mixin
+@import "130_import_lib_lay";             //布局
+@import "150_import_icon";                //图标
+@import "140_import_lib_base";            //base
+
+
+@import "210_import_mod_header";          //头部
+@import "220_import_mod_goods_details";   //商品列表
+@import "230_import_mod_modal";           //模态弹出框
+@import "300_import_sign_in";             //登录注册页
+@import "400_import_notice";              //消息通知
+
+
+@import "500_import_mall";                //商城
+@import "600_import_my";                  //我的

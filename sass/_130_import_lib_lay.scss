@@ -1,0 +1,27 @@
+
+ //title: 布局;
+ //coder:  刘帆;
+ //time: 2017-10-23
+
+ .l_wrap{
+   @include pageWrap;
+ }
+ .l_wrap--bottom{
+   @include pageWrap;
+   padding-bottom: 0.7rem;
+ }
+ .t1 {
+   @include t1;
+ }
+ .t2 {
+   @include t2;
+ }
+ .s2 {
+   @include s2;
+ }
+ .l_wrap__import{
+   @include pageWrapImport;
+ }
+ .l_wrap--margin{
+   margin: 0 0.24rem !important;
+ }

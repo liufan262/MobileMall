@@ -1,0 +1,245 @@
+//title: 头部;
+//coder: 刘帆;
+//time: 2017-10-24
+
+// 首页大头部
+.c_bigHeader {
+  @include pageWrap;
+  margin-top: 0.44rem;
+  padding-bottom: 0.69rem;
+  .bigTitle {
+    @extend %flexbox;
+    @include flex-just(space-between);
+    @include align-items(center);
+  }
+  .l_btn {
+    .l_item {
+      margin-left: 0.18rem;
+    }
+  }
+}
+
+//头部
+.c_header__inner {
+  @include pageWrap;
+  @extend %flexbox;
+  @include align-items(center);
+  height: 0.48rem;
+  .c_header__back {
+    @extend %flexbox;
+    @include flex(1);
+    @include flex-just(flex-start);
+    @include align-items(center);
+    height: 0.48rem;
+  }
+  .c_header__title {
+    @include t3;
+    @extend %flexbox;
+    @include flex-just(center);
+    @include flex(1);
+    .t3{
+      font-weight: bold;
+    }
+  }
+  .c_header__right {
+    @extend %flexbox;
+    @include flex(1);
+    @include flex-just(flex-end);
+    font-size: 0.15rem;
+    @include align-items(center);
+    height: 0.48rem;
+  }
+  .c_width {
+    @include flex(none);
+    width: 0.3rem;
+  }
+}
+
+.l_header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  padding-top: 0.25rem !important;
+}
+
+//头部搜索
+.c_search__box {
+  @extend %flexbox;
+  @include align-items(center);
+  position: relative;
+  height: 0.48rem;
+  .c_search__input {
+    @include flex(1);
+    height: 0.28rem;
+    background-color: #f5f5f9;
+    -webkit-border-radius: 0.14rem;
+    -moz-border-radius: 0.14rem;
+    border-radius: 0.14rem;
+    box-sizing: border-box;;
+    padding: 0.06rem 0.39rem;
+    color: #A1A1AB;
+  }
+}
+
+.c_search__box--goods {
+  @extend .c_search__box;
+  border-top: $borBottomGray;
+  .c_search__input {
+    background-color: #fff;
+  }
+}
+
+.l_header__search {
+  @include pageWrap;
+  display: none;
+  .l_search__icon--inner {
+    position: absolute;
+    left: 0.15rem;
+    top: 50%;
+    margin-top: -0.07rem;
+  }
+  .l_search_btn {
+    padding-left: 0.15rem;
+  }
+}
+
+//滑动图
+.c_slider {
+  width: 100%;
+  overflow-x: auto;
+  .c_slider__list {
+    @extend %flexbox;
+    margin-left: 0.24rem;
+    width: 7.2rem;
+    .c_item {
+      width: 2.3rem;
+      height: 1.28rem;
+      padding-right: 0.1rem;
+      .img {
+        width: 2.3rem;
+        height: 1.28rem;
+        border-radius: 0.03rem;
+        box-shadow: 0 0.03rem 0.06rem 0.01rem rgba(0, 0, 0, 0.3);
+      }
+      img {
+        width: 2.3rem;
+        height: 1.28rem;
+        border-radius: 0.03rem;
+      }
+    }
+  }
+}
+
+.l_slider {
+  padding-bottom: 0.15rem;
+  margin-bottom: 0.2rem;
+}
+
+//商品筛选
+.c_filter {
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  .c_filter__nav {
+    @include pageWrap;
+    border-bottom: $borBottom;
+    @extend %flexbox;
+    @include flex-just(space-between);
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    .c_nav__item {
+      text-align: center;
+      color: $grayColor;
+      position: relative;
+    }
+    .c_nav__item.active {
+      color: #f42d28;
+    }
+  }
+  .c_filter__submenu {
+    max-height: 1000%;
+    visibility: hidden;
+    overflow: auto;
+    opacity: 0;
+    z-index: 8;
+    .c_filter__list {
+      @include pageWrap;
+      background-color: #fff;
+    }
+    .c_item {
+      @extend %flexbox;
+      @include flex-just(space-between);
+      border-bottom: 0.01rem solid #EBEBED;
+      padding-top: 0.11rem;
+      padding-bottom: 0.11rem;
+      .name {
+        line-height: 0.22rem;
+      }
+      .c_choose_icon--goods {
+        visibility: hidden;
+      }
+    }
+    .c_item:nth-last-child {
+      border-bottom: none;
+    }
+    .c_item.active {
+      color: $redColor;
+      .c_choose_icon--goods {
+        visibility: visible;
+      }
+    }
+  }
+  .c_filter__submenu.open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.l_filter {
+  position: relative;
+  z-index: 50;
+  margin-bottom: 0.3rem;
+  .l_filter__submenu {
+    left: 0;
+    right: 0;
+    top: 100%;
+    position: absolute;
+  }
+}
+
+.l_filter--small {
+  margin-bottom: 0;
+}
+
+//筛选弹出层
+.o_filter__mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, .4);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.o_filter__mask.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.c_header__member {
+  box-sizing: border-box;
+  height: 1.1rem;
+  background: url(../image/member_level_header_img.png) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+ 

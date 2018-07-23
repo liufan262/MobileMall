@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>编辑商品</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/100_common.css">
+    <link rel="stylesheet" href="../../css/210_index.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="layout_page_content">
+        <header class="c_header l_header">
+            <div class="c_header__inner">
+                <div class="c_header__back l_header__back" tapmode=""   onclick="window.history.back();">
+                    <button type="button" class="o_icon_back"></button>
+                </div>
+                <div class="c_header__title l_header__title">
+                    <h3 class="t3">编辑商品</h3>
+                </div>
+                <div class="c_header__right l_header__right" >
+
+                </div>
+            </div>
+        </header>
+
+
+        <div class="c_paymentDetails hide">
+           <div class="l_wrap c_goodsItem u_listMarginTop5">
+               <div class="c_goodsTitCont">
+                   <div class="o_goodsImg">
+                       <div class="o_goodsImg__inner">
+                           <img src="../../image/goodsList_img.png" alt="">
+                       </div>
+                       <div class="o_goodsImg__showStatus o_icon_show_status">
+                           购买权
+                       </div>
+                   </div>
+                   <h3 class="o_goodsTitle">
+                       IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                   </h3>
+               </div>
+               <div class="c_goodsInfo">
+                   <div class="c_goodsInfo__left">
+                       <div class="o_countdown__small">
+                           <em class="day">0</em>:<em class="hour">1</em>:<em class="minute">25</em>:<em class="sec">59</em>
+                       </div>
+                   </div>
+                   <div class="c_goodsInfo__right">
+                       <div class="u_moneyFont">
+                           <em>500</em>元
+                       </div>
+                   </div>
+               </div>
+           </div>
+            <div class="c_singleRow l_singleRow_big mui_flex just_between u_borBot10px ">
+                <div class="c_title cell fixed">增加转卖时限</div>
+
+                <div class="  cell fixed">
+                    <div class="o_numAddSubBtn">
+                        <div class="o_add o_icon_sub"></div>
+                        <div class="o_num">2</div>
+                        <div class="o_sub  o_icon_add "></div>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="c_releaseGoods__form u_marginBottom_bigBtn">
+                <div class="c_goodsDescEdit u_borBot10px">
+                    <div class="c_goodsDescEdit__text">
+                        <textarea class="c_textarea" placeholder="请描述一下你的转卖商品购买权" ></textarea>
+                    </div>
+                    <div class="c_goodsDescEdit__voice">
+                        <div class="c_voice">
+                            <div class="icon o_icon_voice_msg"></div>
+                            <div class="text"><em>3</em>s</div>
+                            <div class="c_close o_icon_close_small"></div>
+                        </div>
+                        <div class="c_voice">
+                            <div class="icon o_icon_voice_add"></div>
+                            <div class="text">添加语音描述</div>
+                        </div>
+                        <div class="c_word_num">
+                            <em>0</em>/<em>120</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c_releaseGoods__my">
+                    <div class="c_singleRow  mui_flex just_between u_borBot1px u_pageWrap_margin">
+                        <div class="c_title cell fixed">我的商品报价</div>
+                        <div class="  cell fixed">
+                            <span class="u_redColor">500元</span>
+                        </div>
+                    </div>
+                    <div class="c_releaseGoods__inner">
+                        <div class="c_tit">编辑差价(元)</div>
+                        <input type="text" class="input_money" placeholder="请输入差价">
+                        <div class="c_tips u_redColor">*差价是您出售商品购买权可获得的利润</div>
+                    </div>
+                </div>
+                <!--去支付-->
+                <div class="o_settlement">
+                    <div class="o_mergeMoney">
+                        增加时限费: <span class="num"><em>999</em>元</span>
+                    </div>
+                    <div class="o_settlement__btn"  tapmode="" onclick="api.openWin({name:'420_goods_pay_success',url:'420_goods_pay_success.html'})">
+                        去支付
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+
+        <!--支付内容-->
+        <div class="c_paymentDetails__content u_marginBottom_bigBtn">
+            <ul class="c_payMode title_nav">
+                <li class="c_item active" tapmode=""  onclick="switchTab(1,'title_nav','tab_content')">
+                    <div class="o_icon_resell_goods"></div>
+                    <div class="c_text">转卖商品</div>
+                    <div class="o_icon_inputRadio"></div>
+                    <div class="c_line"></div>
+                </li>
+                <li class="c_item"  tapmode=""  onclick="switchTab(2,'title_nav','tab_content')">
+                    <div class="o_icon_receive_goods"></div>
+                    <div class="c_text">领取商品</div>
+                    <div class="o_icon_inputRadio"></div>
+                    <div class="c_line"></div>
+                </li>
+            </ul>
+
+            <form action="" class="c_paymentDetails__form">
+                <div class="tab_content">
+                    <div class="tab_pane active">
+                        <div class="l_wrap c_goodsItem u_listMarginTop5">
+                            <div class="c_goodsTitCont">
+                                <div class="o_goodsImg">
+                                    <div class="o_goodsImg__inner">
+                                        <img src="../../image/goodsList_img.png" alt="">
+                                    </div>
+                                    <div class="o_goodsImg__showStatus o_icon_show_status">
+                                        转卖
+                                    </div>
+                                </div>
+                                <h3 class="o_goodsTitle">
+                                    IPHONE X,HELLOEi未来。全面屏，全面张芳。去那么元低放,全面张芳。去那么元低放.
+                                </h3>
+                            </div>
+                            <div class="c_goodsInfo">
+                                <div class="c_goodsInfo__left">
+                                    <div class="o_countdown__small">
+                                        <em class="day">0</em>:<em class="hour">1</em>:<em class="minute">25</em>:<em class="sec">59</em>
+                                    </div>
+                                </div>
+                                <div class="c_goodsInfo__right">
+                                    <div class="u_moneyFont">
+                                        <em>500</em>元
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c_singleRow l_singleRow_big mui_flex just_between u_borBot10px ">
+                            <div class="c_title cell fixed">增加转卖时限</div>
+
+                            <div class="  cell fixed">
+                                <div class="o_numAddSubBtn">
+                                    <div class="o_add o_icon_sub"></div>
+                                    <div class="o_num">2</div>
+                                    <div class="o_sub  o_icon_add "></div>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" class="c_releaseGoods__form u_marginBottom_bigBtn">
+                            <div class="c_goodsDescEdit u_borBot10px">
+                                <div class="c_goodsDescEdit__text">
+                                    <textarea class="c_textarea" placeholder="请描述一下你的转卖商品购买权" ></textarea>
+                                </div>
+                                <div class="c_goodsDescEdit__voice">
+                                    <div class="c_voice">
+                                        <div class="icon o_icon_voice_msg"></div>
+                                        <div class="text"><em>3</em>s</div>
+                                        <div class="c_close o_icon_close_small"></div>
+                                    </div>
+                                    <div class="c_voice">
+                                        <div class="icon o_icon_voice_add"></div>
+                                        <div class="text">添加语音描述</div>
+                                    </div>
+                                    <div class="c_word_num">
+                                        <em>0</em>/<em>120</em>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c_releaseGoods__my">
+                                <div class="c_singleRow  mui_flex just_between u_borBot1px u_pageWrap_margin">
+                                    <div class="c_title cell fixed">我的商品报价</div>
+                                    <div class="  cell fixed">
+                                        <span class="u_redColor">500元</span>
+                                    </div>
+                                </div>
+                                <div class="c_releaseGoods__inner">
+                                    <div class="c_tit">编辑差价(元)</div>
+                                    <input type="text" class="input_money" placeholder="请输入差价">
+                                    <div class="c_tips u_redColor">*此价格是您售卖商品的价格</div>
+                                </div>
+                            </div>
+                            <div class="o_enterBtn--footer" tapmode="" onclick="api.openWin({name:'400_goods_payment',url:'400_goods_payment.html'})">
+                                <button class="o_primaryBtn">立即发布</button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="tab_pane">
+                        <!--邮寄地址-->
+                        <div class="c_userMailInfo u_borBot1px">
+                            <div class="c_coordinate o_icon_coordinate"></div>
+                            <div class="c_userMailInfo__inner">
+                                <div class="c_user_name">
+                                    <div class="c_name"><span
+                                            class="tit"><em>收</em><em>货</em><em>人</em></span>：<em>张某某</em></div>
+                                    <div class="c_phone">133<em>****</em>2222</div>
+                                </div>
+                                <div class="c_user_address">
+                                    <div class="c_address_tit"><span class="tit">收货地址</span>：</div>
+                                    <div class="c_address">这里是位置信息三等分建设路口大副加快社交恐惧</div>
+                                </div>
+                            </div>
+                            <div class="o_icon_pointer"></div>
+                        </div>
+
+                        <!--邮寄方式-->
+                        <div class="c_mailModal ">
+                            <div class="c_singleRow  mui_flex align-center u_borderBto">
+                                <div class="c_title cell fixed">配送方式</div>
+                                <div class="c_content cell " style="color: #000;">
+                                    <em>快递</em>&nbsp;&nbsp;<em>免邮</em>
+                                </div>
+                                <div class="c_pointer o_icon_pointer cell fixed"></div>
+                            </div>
+                            <div class="c_order_info">
+                                <div class="c_order__num"><span class="tit">订单编号： </span><span class="num">325741321545741</span>
+                                </div>
+                                <div class="c_createtime"><span class="tit">创建时间： </span><span class="num"><em
+                                        class="date">2017-08-08</em>&nbsp;&nbsp;<em class="time">18:30:30</em></span>
+                                </div>
+                                <div class="c_paytime"><span class="tit">付款时间： </span><span class="num"><em
+                                        class="date">2017-08-08</em>&nbsp;&nbsp;<em
+                                        class="time">18:30:30</em></span></div>
+                            </div>
+
+                    </div>
+                        <div class="u_wrap_btn" tapmode="" onclick="api.openWin({name:'110_my_info'})">
+                            <button type="submit" class="o_primaryBtn">立即领取</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../script/api.js"></script>
+    <script type="text/javascript" src="../../script/common_js.js"></script>
+    <script>
+
+        switchTab=function(index,target,parentBox){
+
+            var lis=$api.domAll('.'+target+' li');
+            for( var i=0;i<lis.length;i++){
+                $api.removeCls(lis[i],'active');
+            }
+            $api.addCls(lis[index-1],'active');
+
+            var contents=$api.domAll('.'+parentBox+'>div');
+            console.log(contents);
+            for( var j=0;j<contents.length;j++){
+                $api.removeCls(contents[j],'active');
+            }
+            $api.addCls(contents[index-1],'active');
+        }
+    </script>
+</body>
+
+</html>
